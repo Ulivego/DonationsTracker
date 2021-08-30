@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */; };
+		A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */; };
+		A1C7B8D626DD1D700091BED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D526DD1D700091BED0 /* ViewController.swift */; };
+		A1C7B8D926DD1D700091BED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8D726DD1D700091BED0 /* Main.storyboard */; };
+		A1C7B8DB26DD1D730091BED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */; };
+		A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */; };
+		A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */; };
+		A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1C7B8E526DD1D730091BED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C7B8C626DD1D6F0091BED0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C7B8CD26DD1D6F0091BED0;
+			remoteInfo = DonationsTracker;
+		};
+		A1C7B8F026DD1D740091BED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C7B8C626DD1D6F0091BED0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C7B8CD26DD1D6F0091BED0;
+			remoteInfo = DonationsTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonationsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1C7B8D526DD1D700091BED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C7B8D826DD1D700091BED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C7B8DD26DD1D730091BED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1C7B8DF26DD1D730091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C7B8E426DD1D730091BED0 /* DonationsTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerTests.swift; sourceTree = "<group>"; };
+		A1C7B8EA26DD1D730091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerUITests.swift; sourceTree = "<group>"; };
+		A1C7B8F526DD1D740091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C7B8CB26DD1D6F0091BED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C7B8E126DD1D730091BED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C7B8EC26DD1D740091BED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C7B8C526DD1D6F0091BED0 = {
+			isa = PBXGroup;
+			children = (
+				A1C7B8D026DD1D700091BED0 /* DonationsTracker */,
+				A1C7B8E726DD1D730091BED0 /* DonationsTrackerTests */,
+				A1C7B8F226DD1D740091BED0 /* DonationsTrackerUITests */,
+				A1C7B8CF26DD1D700091BED0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C7B8CF26DD1D700091BED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */,
+				A1C7B8E426DD1D730091BED0 /* DonationsTrackerTests.xctest */,
+				A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C7B8D026DD1D700091BED0 /* DonationsTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */,
+				A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */,
+				A1C7B8D526DD1D700091BED0 /* ViewController.swift */,
+				A1C7B8D726DD1D700091BED0 /* Main.storyboard */,
+				A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */,
+				A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */,
+				A1C7B8DF26DD1D730091BED0 /* Info.plist */,
+			);
+			path = DonationsTracker;
+			sourceTree = "<group>";
+		};
+		A1C7B8E726DD1D730091BED0 /* DonationsTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */,
+				A1C7B8EA26DD1D730091BED0 /* Info.plist */,
+			);
+			path = DonationsTrackerTests;
+			sourceTree = "<group>";
+		};
+		A1C7B8F226DD1D740091BED0 /* DonationsTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */,
+				A1C7B8F526DD1D740091BED0 /* Info.plist */,
+			);
+			path = DonationsTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C7B8CD26DD1D6F0091BED0 /* DonationsTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C7B8F826DD1D740091BED0 /* Build configuration list for PBXNativeTarget "DonationsTracker" */;
+			buildPhases = (
+				A1C7B8CA26DD1D6F0091BED0 /* Sources */,
+				A1C7B8CB26DD1D6F0091BED0 /* Frameworks */,
+				A1C7B8CC26DD1D6F0091BED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DonationsTracker;
+			productName = DonationsTracker;
+			productReference = A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1C7B8E326DD1D730091BED0 /* DonationsTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C7B8FB26DD1D740091BED0 /* Build configuration list for PBXNativeTarget "DonationsTrackerTests" */;
+			buildPhases = (
+				A1C7B8E026DD1D730091BED0 /* Sources */,
+				A1C7B8E126DD1D730091BED0 /* Frameworks */,
+				A1C7B8E226DD1D730091BED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C7B8E626DD1D730091BED0 /* PBXTargetDependency */,
+			);
+			name = DonationsTrackerTests;
+			productName = DonationsTrackerTests;
+			productReference = A1C7B8E426DD1D730091BED0 /* DonationsTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1C7B8EE26DD1D740091BED0 /* DonationsTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C7B8FE26DD1D740091BED0 /* Build configuration list for PBXNativeTarget "DonationsTrackerUITests" */;
+			buildPhases = (
+				A1C7B8EB26DD1D740091BED0 /* Sources */,
+				A1C7B8EC26DD1D740091BED0 /* Frameworks */,
+				A1C7B8ED26DD1D740091BED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C7B8F126DD1D740091BED0 /* PBXTargetDependency */,
+			);
+			name = DonationsTrackerUITests;
+			productName = DonationsTrackerUITests;
+			productReference = A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C7B8C626DD1D6F0091BED0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Team5;
+				TargetAttributes = {
+					A1C7B8CD26DD1D6F0091BED0 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					A1C7B8E326DD1D730091BED0 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = A1C7B8CD26DD1D6F0091BED0;
+					};
+					A1C7B8EE26DD1D740091BED0 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = A1C7B8CD26DD1D6F0091BED0;
+					};
+				};
+			};
+			buildConfigurationList = A1C7B8C926DD1D6F0091BED0 /* Build configuration list for PBXProject "DonationsTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C7B8C526DD1D6F0091BED0;
+			productRefGroup = A1C7B8CF26DD1D700091BED0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C7B8CD26DD1D6F0091BED0 /* DonationsTracker */,
+				A1C7B8E326DD1D730091BED0 /* DonationsTrackerTests */,
+				A1C7B8EE26DD1D740091BED0 /* DonationsTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C7B8CC26DD1D6F0091BED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */,
+				A1C7B8DB26DD1D730091BED0 /* Assets.xcassets in Resources */,
+				A1C7B8D926DD1D700091BED0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C7B8E226DD1D730091BED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C7B8ED26DD1D740091BED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C7B8CA26DD1D6F0091BED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C7B8D626DD1D700091BED0 /* ViewController.swift in Sources */,
+				A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */,
+				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C7B8E026DD1D730091BED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C7B8EB26DD1D740091BED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C7B8E626DD1D730091BED0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C7B8CD26DD1D6F0091BED0 /* DonationsTracker */;
+			targetProxy = A1C7B8E526DD1D730091BED0 /* PBXContainerItemProxy */;
+		};
+		A1C7B8F126DD1D740091BED0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C7B8CD26DD1D6F0091BED0 /* DonationsTracker */;
+			targetProxy = A1C7B8F026DD1D740091BED0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1C7B8D726DD1D700091BED0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C7B8D826DD1D700091BED0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C7B8DD26DD1D730091BED0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C7B8F626DD1D740091BED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C7B8F726DD1D740091BED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C7B8F926DD1D740091BED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonationsTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.DonationsTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1C7B8FA26DD1D740091BED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonationsTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.DonationsTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1C7B8FC26DD1D740091BED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonationsTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.DonationsTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DonationsTracker.app/DonationsTracker";
+			};
+			name = Debug;
+		};
+		A1C7B8FD26DD1D740091BED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonationsTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.DonationsTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DonationsTracker.app/DonationsTracker";
+			};
+			name = Release;
+		};
+		A1C7B8FF26DD1D740091BED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonationsTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.DonationsTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DonationsTracker;
+			};
+			name = Debug;
+		};
+		A1C7B90026DD1D740091BED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonationsTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.DonationsTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DonationsTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C7B8C926DD1D6F0091BED0 /* Build configuration list for PBXProject "DonationsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C7B8F626DD1D740091BED0 /* Debug */,
+				A1C7B8F726DD1D740091BED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C7B8F826DD1D740091BED0 /* Build configuration list for PBXNativeTarget "DonationsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C7B8F926DD1D740091BED0 /* Debug */,
+				A1C7B8FA26DD1D740091BED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C7B8FB26DD1D740091BED0 /* Build configuration list for PBXNativeTarget "DonationsTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C7B8FC26DD1D740091BED0 /* Debug */,
+				A1C7B8FD26DD1D740091BED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C7B8FE26DD1D740091BED0 /* Build configuration list for PBXNativeTarget "DonationsTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C7B8FF26DD1D740091BED0 /* Debug */,
+				A1C7B90026DD1D740091BED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C7B8C626DD1D6F0091BED0 /* Project object */;
+}
