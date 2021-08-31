@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>232864126627-4bmfak5ojb6n5vbhg7j159lidr3qg41h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.232864126627-4bmfak5ojb6n5vbhg7j159lidr3qg41h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCU8R9pO9x5g_dmHSYygoBAWLMM4XtLgRQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>232864126627</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Team5.DonationsTracker</string>
+	<key>PROJECT_ID</key>
+	<string>donationstracker-72ad6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>donationstracker-72ad6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:232864126627:ios:53f70948d7db0cf4239116</string>
+	<key>DATABASE_URL</key>
+	<string>https://donationstracker-72ad6-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
