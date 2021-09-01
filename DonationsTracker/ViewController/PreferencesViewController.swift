@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  PreferencesViewController.swift
 //  DonationsTracker
 //
-//  Created by Ana on 8/30/21.
+//  Created by user194269 on 9/1/21.
 //  Copyright © 2021 Team5. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class PreferencesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +17,3 @@ class ViewController: UIViewController {
 
 
 }
-

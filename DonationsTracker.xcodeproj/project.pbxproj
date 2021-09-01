@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */; };
 		A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */; };
-		A1C7B8D626DD1D700091BED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D526DD1D700091BED0 /* ViewController.swift */; };
+		A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */; };
 		A1C7B8D926DD1D700091BED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8D726DD1D700091BED0 /* Main.storyboard */; };
 		A1C7B8DB26DD1D730091BED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */; };
 		A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */; };
 		A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */; };
 		A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */; };
+		FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F69626DFC96200337E29 /* SignUpViewController.swift */; };
+		FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */; };
+		FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */; };
 		FCFD1C8C26DED85E006296D6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8B26DED85E006296D6 /* FirebaseStorage */; };
 		FCFD1C8E26DED85E006296D6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8D26DED85E006296D6 /* FirebaseAuth */; };
 		FCFD1C9026DED85E006296D6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8F26DED85E006296D6 /* FirebaseFirestore */; };
@@ -43,7 +46,7 @@
 		A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonationsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1C7B8D526DD1D700091BED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1C7B8D826DD1D700091BED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C7B8DD26DD1D730091BED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerUITests.swift; sourceTree = "<group>"; };
 		A1C7B8F526DD1D740091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC73F69626DFC96200337E29 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationsViewController.swift; sourceTree = "<group>"; };
+		FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +118,8 @@
 				FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */,
 				A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */,
 				A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */,
-				A1C7B8D526DD1D700091BED0 /* ViewController.swift */,
 				A1C7B8D726DD1D700091BED0 /* Main.storyboard */,
+				FC73F6AE26DFC9EE00337E29 /* ViewController */,
 				A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */,
 				A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */,
 				A1C7B8DF26DD1D730091BED0 /* Info.plist */,
@@ -137,6 +143,17 @@
 				A1C7B8F526DD1D740091BED0 /* Info.plist */,
 			);
 			path = DonationsTrackerUITests;
+			sourceTree = "<group>";
+		};
+		FC73F6AE26DFC9EE00337E29 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */,
+				FC73F69626DFC96200337E29 /* SignUpViewController.swift */,
+				FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */,
+				FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C7B8D626DD1D700091BED0 /* ViewController.swift in Sources */,
+				A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */,
+				FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */,
 				A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */,
+				FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */,
 				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
+				FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
