@@ -15,6 +15,7 @@
 		A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */; };
 		A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */; };
 		A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */; };
+		B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */; };
 		FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F69626DFC96200337E29 /* SignUpViewController.swift */; };
 		FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */; };
 		FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */; };
@@ -57,6 +58,7 @@
 		A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerUITests.swift; sourceTree = "<group>"; };
 		A1C7B8F526DD1D740091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FC73F69626DFC96200337E29 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationsViewController.swift; sourceTree = "<group>"; };
 		FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */,
 				A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */,
 				A1C7B8DF26DD1D730091BED0 /* Info.plist */,
+				B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */,
 			);
 			path = DonationsTracker;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */,
 				FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */,
+				B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */,
 				A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */,
 				FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */,
 				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
