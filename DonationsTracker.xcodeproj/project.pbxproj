@@ -15,7 +15,6 @@
 		A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */; };
 		A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */; };
 		A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */; };
-		B434611E26DF0E7600652BF8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B434611D26DF0E7600652BF8 /* Login.storyboard */; };
 		FCFD1C8C26DED85E006296D6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8B26DED85E006296D6 /* FirebaseStorage */; };
 		FCFD1C8E26DED85E006296D6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8D26DED85E006296D6 /* FirebaseAuth */; };
 		FCFD1C9026DED85E006296D6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8F26DED85E006296D6 /* FirebaseFirestore */; };
@@ -55,7 +54,6 @@
 		A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerUITests.swift; sourceTree = "<group>"; };
 		A1C7B8F526DD1D740091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B434611D26DF0E7600652BF8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +117,6 @@
 				A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */,
 				A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */,
 				A1C7B8DF26DD1D730091BED0 /* Info.plist */,
-				B434611D26DF0E7600652BF8 /* Login.storyboard */,
 			);
 			path = DonationsTracker;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 				A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */,
 				FCFD1CAC26DEDE05006296D6 /* GoogleService-Info.plist in Resources */,
 				A1C7B8DB26DD1D730091BED0 /* Assets.xcassets in Resources */,
-				B434611E26DF0E7600652BF8 /* Login.storyboard in Resources */,
 				A1C7B8D926DD1D700091BED0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
