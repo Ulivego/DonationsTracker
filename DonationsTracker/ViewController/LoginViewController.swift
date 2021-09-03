@@ -10,11 +10,29 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var correoTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        correoTF.layer.borderWidth = 2
+        correoTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        correoTF.layer.cornerRadius = 8
+        correoTF.layer.masksToBounds = true
+        
+        passwordTF.layer.borderWidth = 2
+        passwordTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        passwordTF.layer.cornerRadius = 8
+        passwordTF.layer.masksToBounds = true
     }
 
-
+    @IBAction func loginBtn(_ sender: Any) {
+    }
+    
+    
+    @IBAction func registerBtn(_ sender: Any) {
+    }
+    
 }
 
