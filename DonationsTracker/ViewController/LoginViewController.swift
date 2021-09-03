@@ -25,14 +25,20 @@ class LoginViewController: UIViewController {
         passwordTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         passwordTF.layer.cornerRadius = 8
         passwordTF.layer.masksToBounds = true
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
     }
 
     @IBAction func loginBtn(_ sender: Any) {
     }
     
-    
     @IBAction func registerBtn(_ sender: Any) {
     }
     
+    @objc func keyboardDismiss() {
+        view.endEditing(true)
+    }
 }
 
