@@ -251,9 +251,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <datePicker contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-h4-Pif">
-                                <rect key="frame" x="22" y="534" width="370" height="100"/>
-                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmm-ex-hmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
