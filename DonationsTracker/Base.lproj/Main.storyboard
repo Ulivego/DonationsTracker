@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-YR-L5B">
-                                <rect key="frame" x="40" y="366" width="334" height="38.5"/>
+                                <rect key="frame" x="40" y="366" width="95" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-PX-f9g">
-                                <rect key="frame" x="40" y="488" width="334" height="34"/>
+                                <rect key="frame" x="40" y="488" width="95" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="574" width="314" height="50"/>
+                                <rect key="frame" x="50" y="574" width="75" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -83,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-xn-AXx">
-                                <rect key="frame" x="132" y="114" width="150" height="146"/>
+                                <rect key="frame" x="12.5" y="114" width="150" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BsK-RT-2Mh"/>
                                     <constraint firstAttribute="height" constant="146" id="FTL-bc-bho"/>
@@ -330,6 +330,82 @@
             </objects>
             <point key="canvasLocation" x="923" y="-340"/>
         </scene>
+        <!--Event Description View Controller-->
+        <scene sceneID="48r-Hx-EqX">
+            <objects>
+                <viewController id="Zwe-En-BtL" customClass="EventDescriptionViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h20-hn-mVl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-OF-NpB">
+                                <rect key="frame" x="40" y="94" width="344" height="41"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80W-Ac-kHp">
+                                <rect key="frame" x="20" y="166" width="374" height="197"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIZ-MH-sj2">
+                                <rect key="frame" x="40" y="402" width="334" height="29"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Descripcion del evento" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCC-ab-pSv">
+                                <rect key="frame" x="40" y="460" width="334" height="29"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8D-h6-CEk" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
+                                <rect key="frame" x="50" y="721" width="314" height="41"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HCO-sQ-Kgu"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="I2O-WR-ECU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                <state key="normal" title="Apoyar Campaña">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zyN-yS-MHd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="80W-Ac-kHp" firstAttribute="top" relation="lessThanOrEqual" secondItem="UBQ-OF-NpB" secondAttribute="bottom" constant="30" id="0Rn-BH-3kp"/>
+                            <constraint firstItem="80W-Ac-kHp" firstAttribute="leading" secondItem="zyN-yS-MHd" secondAttribute="leading" constant="20" id="2HK-N8-Igd"/>
+                            <constraint firstItem="j8D-h6-CEk" firstAttribute="top" relation="lessThanOrEqual" secondItem="gCC-ab-pSv" secondAttribute="bottom" constant="230" id="8Nt-E8-RzM"/>
+                            <constraint firstItem="rIZ-MH-sj2" firstAttribute="top" relation="lessThanOrEqual" secondItem="80W-Ac-kHp" secondAttribute="bottom" constant="35" id="AiA-pM-xom"/>
+                            <constraint firstItem="zyN-yS-MHd" firstAttribute="trailing" secondItem="rIZ-MH-sj2" secondAttribute="trailing" constant="40" id="Asi-Sa-7dw"/>
+                            <constraint firstItem="zyN-yS-MHd" firstAttribute="bottom" secondItem="j8D-h6-CEk" secondAttribute="bottom" constant="100" id="IEg-LN-RKF"/>
+                            <constraint firstItem="zyN-yS-MHd" firstAttribute="trailing" secondItem="gCC-ab-pSv" secondAttribute="trailing" constant="40" id="SK3-6a-tgK"/>
+                            <constraint firstItem="UBQ-OF-NpB" firstAttribute="top" secondItem="zyN-yS-MHd" secondAttribute="top" constant="50" id="WDD-7r-ibb"/>
+                            <constraint firstItem="zyN-yS-MHd" firstAttribute="trailing" secondItem="80W-Ac-kHp" secondAttribute="trailing" constant="20" id="XMH-mb-z32"/>
+                            <constraint firstItem="rIZ-MH-sj2" firstAttribute="leading" secondItem="zyN-yS-MHd" secondAttribute="leading" constant="40" id="Y5H-sf-2fS"/>
+                            <constraint firstItem="gCC-ab-pSv" firstAttribute="top" relation="lessThanOrEqual" secondItem="rIZ-MH-sj2" secondAttribute="bottom" constant="25" id="YYr-kh-0MY"/>
+                            <constraint firstItem="gCC-ab-pSv" firstAttribute="leading" secondItem="zyN-yS-MHd" secondAttribute="leading" constant="40" id="cq9-EU-o3K"/>
+                            <constraint firstItem="zyN-yS-MHd" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="j8D-h6-CEk" secondAttribute="trailing" constant="50" id="eSh-ht-o4E"/>
+                            <constraint firstItem="j8D-h6-CEk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="zyN-yS-MHd" secondAttribute="leading" constant="50" id="hLB-yB-yU6"/>
+                            <constraint firstItem="zyN-yS-MHd" firstAttribute="trailing" secondItem="UBQ-OF-NpB" secondAttribute="trailing" constant="30" id="oNV-MC-MOc"/>
+                            <constraint firstItem="UBQ-OF-NpB" firstAttribute="leading" secondItem="zyN-yS-MHd" secondAttribute="leading" constant="40" id="tgF-bO-Kyz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZg-7o-SI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517.39130434782612" y="304.6875"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="64E-uM-AIe">
@@ -337,6 +413,9 @@
         </designable>
         <designable name="VxO-dg-8oU">
             <size key="intrinsicContentSize" width="136" height="47"/>
+        </designable>
+        <designable name="j8D-h6-CEk">
+            <size key="intrinsicContentSize" width="175" height="41"/>
         </designable>
     </designables>
     <resources>
