@@ -420,6 +420,7 @@
     </designables>
     <resources>
         <image name="Logo_BAG_manzana" width="508" height="565"/>
+        <image name="benchmark-2.png" width="567" height="293"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
