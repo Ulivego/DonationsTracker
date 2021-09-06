@@ -49,6 +49,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Registro">
                                         <attributes>
+                                            <color key="NSColor" red="1" green="0.62091803550000002" blue="0.1775819659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="40" name="Futura-Medium"/>
                                         </attributes>
                                     </fragment>
@@ -130,13 +131,29 @@
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxO-dg-8oU">
+                                <rect key="frame" x="44" y="678" width="326" height="41"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                <state key="normal" title="Registrarse">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Política de Privacidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsS-Pa-d7i">
+                                <rect key="frame" x="44" y="785" width="326" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmm-ex-hmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="zve-bJ-Wq5" secondAttribute="trailing" constant="22" id="0qi-gY-jCP"/>
+                            <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="VxO-dg-8oU" secondAttribute="trailing" constant="44" id="26t-OQ-rzY"/>
                             <constraint firstItem="h9w-fx-8C8" firstAttribute="top" secondItem="bH5-em-8bj" secondAttribute="bottom" constant="11" id="3AN-Gd-mra"/>
                             <constraint firstItem="bjf-94-obt" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="3DE-VZ-083"/>
+                            <constraint firstItem="DsS-Pa-d7i" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="44" id="3cd-bq-E9W"/>
                             <constraint firstItem="zve-bJ-Wq5" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="6Qv-b7-eJ2"/>
                             <constraint firstItem="ZXF-xS-Iwf" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="EiX-Vq-glw"/>
                             <constraint firstItem="bH5-em-8bj" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="MGW-BK-6u7"/>
@@ -159,14 +176,18 @@
                             <constraint firstItem="daW-Z3-m2u" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="lt6-cy-nl8"/>
                             <constraint firstItem="bH5-em-8bj" firstAttribute="top" secondItem="daW-Z3-m2u" secondAttribute="bottom" constant="22" id="mdp-uc-hxi"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="daW-Z3-m2u" secondAttribute="trailing" constant="22" id="pjj-lG-gd8"/>
+                            <constraint firstItem="VxO-dg-8oU" firstAttribute="top" secondItem="bm1-Kz-ogf" secondAttribute="bottom" constant="66" id="pwD-QX-daV"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="h9w-fx-8C8" secondAttribute="trailing" constant="22" id="rIQ-kh-AU3"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="ZXF-xS-Iwf" secondAttribute="trailing" constant="22" id="t5R-eP-fTc"/>
                             <constraint firstItem="jAF-O7-uue" firstAttribute="top" secondItem="dg6-TH-e1N" secondAttribute="bottom" constant="44" id="tLa-Vq-5YS"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="bH5-em-8bj" secondAttribute="trailing" constant="22" id="w1s-rS-DvG"/>
                             <constraint firstItem="Gyx-1p-PHp" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="wMH-we-kGw"/>
+                            <constraint firstItem="DsS-Pa-d7i" firstAttribute="top" secondItem="VxO-dg-8oU" secondAttribute="bottom" constant="66" id="wdl-7q-ix5"/>
                             <constraint firstItem="dg6-TH-e1N" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="wf8-wo-pxw"/>
                             <constraint firstItem="MN8-DQ-nSt" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="x8U-DA-8nP"/>
+                            <constraint firstItem="VxO-dg-8oU" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="44" id="yyr-r4-1qe"/>
                             <constraint firstItem="daW-Z3-m2u" firstAttribute="top" secondItem="Gyx-1p-PHp" secondAttribute="bottom" constant="11" id="zBC-sy-fzs"/>
+                            <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="DsS-Pa-d7i" secondAttribute="trailing" constant="44" id="zKM-g4-Cwh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -208,6 +229,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
