@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -234,7 +234,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                          
                             <datePicker contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-h4-Pif">
                                 <rect key="frame" x="22" y="578" width="370" height="100"/>
                             </datePicker>
@@ -251,9 +250,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <datePicker contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-h4-Pif">
-                                <rect key="frame" x="22" y="534" width="370" height="100"/>
-                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmm-ex-hmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -302,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWG-Mo-4VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1093" y="351"/>
+            <point key="canvasLocation" x="-448" y="-340"/>
         </scene>
         <!--Make Donations View Controller-->
         <scene sceneID="fYq-3q-QQ8">
@@ -317,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNV-mI-KKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2638" y="-323"/>
+            <point key="canvasLocation" x="232" y="-340"/>
         </scene>
         <!--Preferences View Controller-->
         <scene sceneID="BUJ-mk-Jjr">
@@ -332,62 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq1-Xe-nGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3594" y="-323"/>
-        </scene>
-        <!--Events View Controller-->
-        <scene sceneID="V9F-md-9VD">
-            <objects>
-                <tableViewController id="wEd-jZ-Ekc" customClass="EventsViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gj2-ce-92m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="tnd-4g-W7D">
-                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tnd-4g-W7D" id="ozt-nj-teF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benchmark-2.png" id="Mwd-a7-Xjd">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Campaña" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLk-76-hkb">
-                                            <rect key="frame" x="20" y="140" width="374" height="49"/>
-                                            <color key="backgroundColor" red="1" green="0.9861351612" blue="0.9965337903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="vLk-76-hkb" secondAttribute="trailing" id="Kzg-yc-5hf"/>
-                                        <constraint firstItem="vLk-76-hkb" firstAttribute="leading" secondItem="ozt-nj-teF" secondAttribute="leadingMargin" id="X37-0E-F8X"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="vLk-76-hkb" secondAttribute="bottom" id="sZ3-Wu-GfY"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="wEd-jZ-Ekc" id="rC0-fc-1Pc"/>
-                            <outlet property="delegate" destination="wEd-jZ-Ekc" id="g97-4K-wNN"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sw9-u8-wx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationBar contentMode="scaleToFill" id="JDz-sA-Tyq">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Title" id="EaX-GZ-cmh">
-                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="nHc-bc-HLc"/>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
-            </objects>
-            <point key="canvasLocation" x="1713.0434782608697" y="-334.15178571428572"/>
+            <point key="canvasLocation" x="923" y="-340"/>
         </scene>
     </scenes>
     <designables>
@@ -399,7 +340,6 @@
         </designable>
     </designables>
     <resources>
-
         <image name="Logo_BAG_manzana" width="508" height="565"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
