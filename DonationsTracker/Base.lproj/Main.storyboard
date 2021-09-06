@@ -114,37 +114,35 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-DQ-nSt">
                                 <rect key="frame" x="22" y="308" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daW-Z3-m2u">
                                 <rect key="frame" x="22" y="398" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-fx-8C8">
                                 <rect key="frame" x="22" y="488" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bm1-Kz-ogf">
-                                <rect key="frame" x="22" y="578" width="370" height="34"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxO-dg-8oU">
-                                <rect key="frame" x="44" y="678" width="326" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Política de Privacidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsS-Pa-d7i">
+                                <rect key="frame" x="44" y="796" width="326" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-h4-Pif">
+                                <rect key="frame" x="22" y="578" width="370" height="100"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxO-dg-8oU">
+                                <rect key="frame" x="44" y="711" width="326" height="41"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
                                 <state key="normal" title="Registrarse">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Política de Privacidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsS-Pa-d7i">
-                                <rect key="frame" x="44" y="785" width="326" height="23"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmm-ex-hmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -156,6 +154,7 @@
                             <constraint firstItem="DsS-Pa-d7i" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="44" id="3cd-bq-E9W"/>
                             <constraint firstItem="zve-bJ-Wq5" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="6Qv-b7-eJ2"/>
                             <constraint firstItem="ZXF-xS-Iwf" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="EiX-Vq-glw"/>
+                            <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="wC3-h4-Pif" secondAttribute="trailing" constant="22" id="JvQ-Ic-OZt"/>
                             <constraint firstItem="bH5-em-8bj" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="MGW-BK-6u7"/>
                             <constraint firstItem="ZXF-xS-Iwf" firstAttribute="top" secondItem="h9w-fx-8C8" secondAttribute="bottom" constant="22" id="NJh-Q3-Xkc"/>
                             <constraint firstItem="bjf-94-obt" firstAttribute="top" secondItem="jAF-O7-uue" secondAttribute="bottom" constant="11" id="OpI-a4-mpS"/>
@@ -165,25 +164,24 @@
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="jAF-O7-uue" secondAttribute="trailing" constant="22" id="XEi-iJ-3Ez"/>
                             <constraint firstItem="dg6-TH-e1N" firstAttribute="top" secondItem="Rmm-ex-hmt" secondAttribute="top" constant="44" id="XGj-UC-LJ6"/>
                             <constraint firstItem="Gyx-1p-PHp" firstAttribute="top" secondItem="MN8-DQ-nSt" secondAttribute="bottom" constant="22" id="YxY-9R-Z4H"/>
-                            <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="bm1-Kz-ogf" secondAttribute="trailing" constant="22" id="bZc-jG-Fvh"/>
-                            <constraint firstItem="bm1-Kz-ogf" firstAttribute="top" secondItem="ZXF-xS-Iwf" secondAttribute="bottom" constant="11" id="cck-S7-OOZ"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="bjf-94-obt" secondAttribute="trailing" constant="22" id="eU0-ze-tZs"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="MN8-DQ-nSt" secondAttribute="trailing" constant="22" id="ehd-nf-Vad"/>
                             <constraint firstItem="jAF-O7-uue" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="hiJ-g3-OHw"/>
                             <constraint firstItem="zve-bJ-Wq5" firstAttribute="top" secondItem="bjf-94-obt" secondAttribute="bottom" constant="22" id="iQS-L9-lEp"/>
-                            <constraint firstItem="bm1-Kz-ogf" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="ibw-U6-srl"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="dg6-TH-e1N" secondAttribute="trailing" constant="22" id="jN5-II-OqU"/>
+                            <constraint firstItem="VxO-dg-8oU" firstAttribute="top" secondItem="wC3-h4-Pif" secondAttribute="bottom" constant="33" id="kJA-Jk-NTe"/>
                             <constraint firstItem="daW-Z3-m2u" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="lt6-cy-nl8"/>
                             <constraint firstItem="bH5-em-8bj" firstAttribute="top" secondItem="daW-Z3-m2u" secondAttribute="bottom" constant="22" id="mdp-uc-hxi"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="daW-Z3-m2u" secondAttribute="trailing" constant="22" id="pjj-lG-gd8"/>
-                            <constraint firstItem="VxO-dg-8oU" firstAttribute="top" secondItem="bm1-Kz-ogf" secondAttribute="bottom" constant="66" id="pwD-QX-daV"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="h9w-fx-8C8" secondAttribute="trailing" constant="22" id="rIQ-kh-AU3"/>
+                            <constraint firstItem="wC3-h4-Pif" firstAttribute="top" secondItem="ZXF-xS-Iwf" secondAttribute="bottom" constant="11" id="skn-vo-Vfw"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="ZXF-xS-Iwf" secondAttribute="trailing" constant="22" id="t5R-eP-fTc"/>
                             <constraint firstItem="jAF-O7-uue" firstAttribute="top" secondItem="dg6-TH-e1N" secondAttribute="bottom" constant="44" id="tLa-Vq-5YS"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="bH5-em-8bj" secondAttribute="trailing" constant="22" id="w1s-rS-DvG"/>
                             <constraint firstItem="Gyx-1p-PHp" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="wMH-we-kGw"/>
-                            <constraint firstItem="DsS-Pa-d7i" firstAttribute="top" secondItem="VxO-dg-8oU" secondAttribute="bottom" constant="66" id="wdl-7q-ix5"/>
+                            <constraint firstItem="DsS-Pa-d7i" firstAttribute="top" secondItem="VxO-dg-8oU" secondAttribute="bottom" constant="44" id="wdl-7q-ix5"/>
                             <constraint firstItem="dg6-TH-e1N" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="wf8-wo-pxw"/>
+                            <constraint firstItem="wC3-h4-Pif" firstAttribute="leading" secondItem="gav-Nv-M6Z" secondAttribute="leading" constant="22" id="x1f-LM-iQV"/>
                             <constraint firstItem="MN8-DQ-nSt" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="x8U-DA-8nP"/>
                             <constraint firstItem="VxO-dg-8oU" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="44" id="yyr-r4-1qe"/>
                             <constraint firstItem="daW-Z3-m2u" firstAttribute="top" secondItem="Gyx-1p-PHp" secondAttribute="bottom" constant="11" id="zBC-sy-fzs"/>
