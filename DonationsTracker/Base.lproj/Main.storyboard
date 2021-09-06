@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="571" width="314" height="50"/>
+                                <rect key="frame" x="50" y="574" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -63,16 +63,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-Cs-Rs0">
-                                <rect key="frame" x="211" y="704" width="173" height="39"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
+                                <rect key="frame" x="223" y="714" width="141" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <state key="normal" title="Crear una cuenta"/>
                                 <connections>
                                     <action selector="registerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Do4-me-xgk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="¿No tienes cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONL-cR-AjJ">
-                                <rect key="frame" x="30" y="710" width="176" height="27"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
+                                <rect key="frame" x="60" y="714" width="153" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -93,13 +93,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ONL-cR-AjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3cx-vR-yRf"/>
                             <constraint firstItem="64E-uM-AIe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="5je-2u-cM0"/>
                             <constraint firstItem="64E-uM-AIe" firstAttribute="top" secondItem="1wX-PX-f9g" secondAttribute="bottom" constant="50" id="CD1-7h-eLc"/>
                             <constraint firstItem="w0m-Cs-Rs0" firstAttribute="bottom" secondItem="ONL-cR-AjJ" secondAttribute="bottom" id="E3M-HM-wRO"/>
+                            <constraint firstItem="ONL-cR-AjJ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="H0w-r8-wDw"/>
                             <constraint firstItem="1ZG-YR-L5B" firstAttribute="leading" secondItem="dpf-4a-2g9" secondAttribute="leading" id="Jua-yn-zzn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ZG-YR-L5B" secondAttribute="trailing" constant="40" id="L9V-52-e57"/>
-                            <constraint firstItem="w0m-Cs-Rs0" firstAttribute="leading" secondItem="ONL-cR-AjJ" secondAttribute="trailing" constant="5" id="Nmk-wz-fQg"/>
+                            <constraint firstItem="w0m-Cs-Rs0" firstAttribute="leading" secondItem="ONL-cR-AjJ" secondAttribute="trailing" constant="10" id="Nmk-wz-fQg"/>
                             <constraint firstItem="hRe-xn-AXx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="P60-VA-oFE"/>
                             <constraint firstItem="hRe-xn-AXx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QbR-DN-yrT"/>
                             <constraint firstItem="w0m-Cs-Rs0" firstAttribute="top" secondItem="ONL-cR-AjJ" secondAttribute="top" id="Tai-TD-DIu"/>
@@ -110,8 +110,9 @@
                             <constraint firstItem="ONL-cR-AjJ" firstAttribute="top" secondItem="64E-uM-AIe" secondAttribute="bottom" constant="90" id="iHA-Mv-slV"/>
                             <constraint firstItem="1wX-PX-f9g" firstAttribute="trailing" secondItem="1ZG-YR-L5B" secondAttribute="trailing" id="iOe-UM-w2c"/>
                             <constraint firstItem="1wX-PX-f9g" firstAttribute="top" secondItem="qHZ-n6-yOT" secondAttribute="bottom" constant="20" id="ixS-z2-vtH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w0m-Cs-Rs0" secondAttribute="trailing" constant="30" id="lt0-WW-N9J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w0m-Cs-Rs0" secondAttribute="trailing" constant="10" id="lt0-WW-N9J"/>
                             <constraint firstItem="dpf-4a-2g9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="qNP-43-eAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ONL-cR-AjJ" secondAttribute="bottom" constant="20" id="qpL-Jv-W42"/>
                             <constraint firstItem="1ZG-YR-L5B" firstAttribute="top" secondItem="dpf-4a-2g9" secondAttribute="bottom" constant="20" id="ubl-tc-hP2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64E-uM-AIe" secondAttribute="trailing" constant="50" id="x5h-iE-9VQ"/>
                         </constraints>

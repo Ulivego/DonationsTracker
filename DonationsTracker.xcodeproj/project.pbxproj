@@ -117,6 +117,7 @@
 		A1C7B8D026DD1D700091BED0 /* DonationsTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B47CED0626E649E60024719B /* Styles */,
 				FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */,
 				A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */,
 				A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */,
@@ -125,7 +126,6 @@
 				A1C7B8DA26DD1D730091BED0 /* Assets.xcassets */,
 				A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */,
 				A1C7B8DF26DD1D730091BED0 /* Info.plist */,
-				B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */,
 			);
 			path = DonationsTracker;
 			sourceTree = "<group>";
@@ -146,6 +146,14 @@
 				A1C7B8F526DD1D740091BED0 /* Info.plist */,
 			);
 			path = DonationsTrackerUITests;
+			sourceTree = "<group>";
+		};
+		B47CED0626E649E60024719B /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		FC73F6AE26DFC9EE00337E29 /* ViewController */ = {
