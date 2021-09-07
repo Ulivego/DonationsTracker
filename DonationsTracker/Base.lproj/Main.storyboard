@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-1126.0869565217392" y="-340.17857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="5e2-gl-YQc">
             <objects>
-                <viewController id="uTg-E3-bb0" sceneMemberID="viewController">
+                <viewController id="uTg-E3-bb0" customClass="HomeViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Tp-mq-LTJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
