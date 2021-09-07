@@ -316,6 +316,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COO-vO-K3i">
+                                            <rect key="frame" x="11" y="11" width="392" height="178"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Campaña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-5V-b3R">
                                             <rect key="frame" x="11" y="160" width="392" height="29"/>
                                             <color key="backgroundColor" red="1" green="0.9861351612" blue="0.9965337903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -323,9 +326,6 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COO-vO-K3i">
-                                            <rect key="frame" x="11" y="11" width="392" height="178"/>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="COO-vO-K3i" firstAttribute="top" secondItem="U2E-4B-H4G" secondAttribute="top" constant="11" id="8NF-Ij-Sc9"/>
