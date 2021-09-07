@@ -21,6 +21,7 @@
 		FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */; };
 		FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */; };
 		FCEBFD0726E7951D003D1059 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBFD0626E7951D003D1059 /* EventsViewController.swift */; };
+		FCEBFD1226E7A4E6003D1059 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */; };
 		FCFD1C8C26DED85E006296D6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8B26DED85E006296D6 /* FirebaseStorage */; };
 		FCFD1C8E26DED85E006296D6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8D26DED85E006296D6 /* FirebaseAuth */; };
 		FCFD1C9026DED85E006296D6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8F26DED85E006296D6 /* FirebaseFirestore */; };
@@ -66,6 +67,7 @@
 		FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationsViewController.swift; sourceTree = "<group>"; };
 		FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		FCEBFD0626E7951D003D1059 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +171,7 @@
 				FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */,
 				B42B190126E661BE00796F2F /* EventDescriptionViewController.swift */,
 				FCEBFD0626E7951D003D1059 /* EventsViewController.swift */,
+				FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */,
 				A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */,
 				B42B190226E661BE00796F2F /* EventDescriptionViewController.swift in Sources */,
+				FCEBFD1226E7A4E6003D1059 /* HomeViewController.swift in Sources */,
 				FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */,
 				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
 				FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */,
