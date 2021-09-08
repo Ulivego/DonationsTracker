@@ -482,7 +482,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Descripcion del Evento/Campaña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOh-Xs-PVz">
-                                <rect key="frame" x="20" y="640" width="324" height="28"/>
+                                <rect key="frame" x="20" y="594" width="324" height="28"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -510,14 +510,8 @@
                                     <action selector="listoBtn:" destination="fcD-Ol-A19" eventType="touchUpInside" id="6FD-dS-Ivv"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WER-Qy-X0j">
-                                <rect key="frame" x="20" y="676" width="374" height="34"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SCg-J7-SBC">
-                                <rect key="frame" x="4" y="467" width="414" height="162"/>
+                                <rect key="frame" x="2" y="467" width="410" height="100"/>
                                 <connections>
                                     <action selector="datePicker:" destination="fcD-Ol-A19" eventType="valueChanged" id="Na6-eY-KQr"/>
                                 </connections>
@@ -529,6 +523,12 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="190" id="lik-6P-yLs"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WER-Qy-X0j">
+                                <rect key="frame" x="20" y="630" width="374" height="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PUd-PH-YmG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
