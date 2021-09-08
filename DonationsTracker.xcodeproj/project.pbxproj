@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A18BF77F26E79E5C00CF23B0 /* EarnedBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BF77E26E79E5B00CF23B0 /* EarnedBadge.swift */; };
+		A18BF78126E8448400CF23B0 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BF78026E8448400CF23B0 /* Badge.swift */; };
+		A18BF78326E846FE00CF23B0 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BF78226E846FE00CF23B0 /* Campaign.swift */; };
+		A18BF78526E84F8200CF23B0 /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BF78426E84F8200CF23B0 /* Donations.swift */; };
+		A1B69ED526E6695600536AB4 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B69ED426E6695600536AB4 /* Users.swift */; };
 		A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */; };
 		A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */; };
 		A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */; };
@@ -15,13 +20,9 @@
 		A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */; };
 		A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */; };
 		A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */; };
-		B42B190226E661BE00796F2F /* EventDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B190126E661BE00796F2F /* EventDescriptionViewController.swift */; };
-		B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */; };
 		FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F69626DFC96200337E29 /* SignUpViewController.swift */; };
 		FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */; };
 		FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */; };
-		FCEBFD0726E7951D003D1059 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBFD0626E7951D003D1059 /* EventsViewController.swift */; };
-		FCEBFD1226E7A4E6003D1059 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */; };
 		FCFD1C8C26DED85E006296D6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8B26DED85E006296D6 /* FirebaseStorage */; };
 		FCFD1C8E26DED85E006296D6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8D26DED85E006296D6 /* FirebaseAuth */; };
 		FCFD1C9026DED85E006296D6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCFD1C8F26DED85E006296D6 /* FirebaseFirestore */; };
@@ -47,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A18BF77E26E79E5B00CF23B0 /* EarnedBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnedBadge.swift; sourceTree = "<group>"; };
+		A18BF78026E8448400CF23B0 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		A18BF78226E846FE00CF23B0 /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		A18BF78426E84F8200CF23B0 /* Donations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donations.swift; sourceTree = "<group>"; };
+		A1B69ED426E6695600536AB4 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonationsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,13 +67,9 @@
 		A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerUITests.swift; sourceTree = "<group>"; };
 		A1C7B8F526DD1D740091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B42B190126E661BE00796F2F /* EventDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptionViewController.swift; sourceTree = "<group>"; };
-		B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FC73F69626DFC96200337E29 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationsViewController.swift; sourceTree = "<group>"; };
 		FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		FCEBFD0626E7951D003D1059 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
-		FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1B69ED326E6693600536AB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1B69ED426E6695600536AB4 /* Users.swift */,
+				A18BF77E26E79E5B00CF23B0 /* EarnedBadge.swift */,
+				A18BF78026E8448400CF23B0 /* Badge.swift */,
+				A18BF78226E846FE00CF23B0 /* Campaign.swift */,
+				A18BF78426E84F8200CF23B0 /* Donations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A1C7B8C526DD1D6F0091BED0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +137,7 @@
 		A1C7B8D026DD1D700091BED0 /* DonationsTracker */ = {
 			isa = PBXGroup;
 			children = (
-				B47CED0626E649E60024719B /* Styles */,
+				A1B69ED326E6693600536AB4 /* Models */,
 				FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */,
 				A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */,
 				A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */,
@@ -154,14 +168,6 @@
 			path = DonationsTrackerUITests;
 			sourceTree = "<group>";
 		};
-		B47CED0626E649E60024719B /* Styles */ = {
-			isa = PBXGroup;
-			children = (
-				B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */,
-			);
-			path = Styles;
-			sourceTree = "<group>";
-		};
 		FC73F6AE26DFC9EE00337E29 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,9 +175,6 @@
 				FC73F69626DFC96200337E29 /* SignUpViewController.swift */,
 				FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */,
 				FC73F6A926DFC9DC00337E29 /* PreferencesViewController.swift */,
-				B42B190126E661BE00796F2F /* EventDescriptionViewController.swift */,
-				FCEBFD0626E7951D003D1059 /* EventsViewController.swift */,
-				FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -319,14 +322,15 @@
 			files = (
 				A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */,
 				FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */,
-				B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */,
+				A18BF78526E84F8200CF23B0 /* Donations.swift in Sources */,
 				A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */,
-				B42B190226E661BE00796F2F /* EventDescriptionViewController.swift in Sources */,
-				FCEBFD1226E7A4E6003D1059 /* HomeViewController.swift in Sources */,
+				A18BF78326E846FE00CF23B0 /* Campaign.swift in Sources */,
 				FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */,
 				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
 				FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */,
-				FCEBFD0726E7951D003D1059 /* EventsViewController.swift in Sources */,
+				A18BF77F26E79E5C00CF23B0 /* EarnedBadge.swift in Sources */,
+				A18BF78126E8448400CF23B0 /* Badge.swift in Sources */,
+				A1B69ED526E6695600536AB4 /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
