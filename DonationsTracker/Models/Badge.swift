@@ -1,5 +1,5 @@
 //
-//  EarnedBadge.swift
+//  Badge.swift
 //  DonationsTracker
 //
 //  Created by Ana on 9/7/21.
@@ -8,39 +8,43 @@
 
 import Firebase
 
-struct EarnedBadge{
+struct Badge{
     let reference: DatabaseReference?
     let key: String
     let badgeID: Int
-    let userID: Int
-    let dateEarned: Date
-    let earned: Bool
+    let description: String
+    let name: String
+    let type: String
+    let requisit: String
 
     init?(snapshot: DataSnapshot)
     {
         guard
             let value = snapshot.value as? [String: AnyObject],
             let badgeID = value["badgeID"] as? Int,
-            let userID = value["userId"] as? Int,
-            let dateEarned = value["dataEarned"] as? Date,
-            let earned = value["earned"] as? Bool
+            let description = value["description"] as? String,
+            let name = value["name"] as? String,
+            let type = value["type"] as? String,
+            let requisit = value["requisit"] as? String
         else {
             return nil
         }
         self.reference = snapshot.ref
         self.key = snapshot.key
         self.badgeID = badgeID
-        self.userID = userID
-        self.dateEarned = dateEarned
-        self.earned = earned
+        self.description = description
+        self.name = name
+        self.type = type
+        self.requisit = requisit
     }
 
     func toAnyObject() -> Any{
         return [
             "badgeID":badgeID,
-            "userID":userID,
-            "dateEarned":dateEarned,
-            "earned":earned
+            "description":description,
+            "name":name,
+            "type":type,
+            "requisit":requisit
         ]
     }
 }
