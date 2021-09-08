@@ -15,6 +15,11 @@
 		A1C7B8DE26DD1D730091BED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7B8DC26DD1D730091BED0 /* LaunchScreen.storyboard */; };
 		A1C7B8E926DD1D730091BED0 /* DonationsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8E826DD1D730091BED0 /* DonationsTrackerTests.swift */; };
 		A1C7B8F426DD1D740091BED0 /* DonationsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */; };
+		A1DC302726E8EE2100AD7367 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC302626E8EE2100AD7367 /* User.swift */; };
+		A1DC302926E8EE6F00AD7367 /* EarnedBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC302826E8EE6F00AD7367 /* EarnedBadges.swift */; };
+		A1DC302B26E8EEA300AD7367 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC302A26E8EEA300AD7367 /* Badge.swift */; };
+		A1DC302D26E8EEC100AD7367 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC302C26E8EEC100AD7367 /* Campaign.swift */; };
+		A1DC302F26E8EEE400AD7367 /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC302E26E8EEE400AD7367 /* Donations.swift */; };
 		B42B190226E661BE00796F2F /* EventDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B190126E661BE00796F2F /* EventDescriptionViewController.swift */; };
 		B43A1C2D26E7A0CA00726F20 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43A1C2C26E7A0CA00726F20 /* CreateEventViewController.swift */; };
 		B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */; };
@@ -62,6 +67,11 @@
 		A1C7B8EF26DD1D740091BED0 /* DonationsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonationsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8F326DD1D740091BED0 /* DonationsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTrackerUITests.swift; sourceTree = "<group>"; };
 		A1C7B8F526DD1D740091BED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DC302626E8EE2100AD7367 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1DC302826E8EE6F00AD7367 /* EarnedBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnedBadges.swift; sourceTree = "<group>"; };
+		A1DC302A26E8EEA300AD7367 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		A1DC302C26E8EEC100AD7367 /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		A1DC302E26E8EEE400AD7367 /* Donations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donations.swift; sourceTree = "<group>"; };
 		B42B190126E661BE00796F2F /* EventDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptionViewController.swift; sourceTree = "<group>"; };
 		B43A1C2C26E7A0CA00726F20 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 			children = (
 				B47CED0626E649E60024719B /* Styles */,
 				FCFD1CAB26DEDE05006296D6 /* GoogleService-Info.plist */,
+				A1DC302526E8EDEE00AD7367 /* Models */,
 				A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */,
 				A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */,
 				A1C7B8D726DD1D700091BED0 /* Main.storyboard */,
@@ -154,6 +165,18 @@
 				A1C7B8F526DD1D740091BED0 /* Info.plist */,
 			);
 			path = DonationsTrackerUITests;
+			sourceTree = "<group>";
+		};
+		A1DC302526E8EDEE00AD7367 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1DC302626E8EE2100AD7367 /* User.swift */,
+				A1DC302826E8EE6F00AD7367 /* EarnedBadges.swift */,
+				A1DC302A26E8EEA300AD7367 /* Badge.swift */,
+				A1DC302C26E8EEC100AD7367 /* Campaign.swift */,
+				A1DC302E26E8EEE400AD7367 /* Donations.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B47CED0626E649E60024719B /* Styles */ = {
@@ -322,14 +345,19 @@
 			files = (
 				A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */,
 				FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */,
+				A1DC302926E8EE6F00AD7367 /* EarnedBadges.swift in Sources */,
 				B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */,
 				A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */,
 				B42B190226E661BE00796F2F /* EventDescriptionViewController.swift in Sources */,
 				FCEBFD1226E7A4E6003D1059 /* HomeViewController.swift in Sources */,
+				A1DC302B26E8EEA300AD7367 /* Badge.swift in Sources */,
 				FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */,
+				A1DC302F26E8EEE400AD7367 /* Donations.swift in Sources */,
 				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
+				A1DC302726E8EE2100AD7367 /* User.swift in Sources */,
 				B43A1C2D26E7A0CA00726F20 /* CreateEventViewController.swift in Sources */,
 				FC73F6AA26DFC9DC00337E29 /* PreferencesViewController.swift in Sources */,
+				A1DC302D26E8EEC100AD7367 /* Campaign.swift in Sources */,
 				FCEBFD0726E7951D003D1059 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
