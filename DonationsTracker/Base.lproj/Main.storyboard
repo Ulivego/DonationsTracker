@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -454,16 +454,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mis donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2D-2h-jLS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D2D-2h-jLS">
                                 <rect key="frame" x="35" y="135" width="344" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPB-wM-MMK">
-                                <rect key="frame" x="35" y="201" width="104" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPB-wM-MMK">
+                                <rect key="frame" x="35" y="201" width="104" height="23.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Donador">
                                         <attributes>
@@ -474,64 +473,412 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gh-kU-7zx">
-                                <rect key="frame" x="35" y="276" width="344" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gh-kU-7zx">
+                                <rect key="frame" x="35" y="262.5" width="344" height="23.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJv-5d-wSp">
-                                <rect key="frame" x="147" y="201" width="232" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nJv-5d-wSp">
+                                <rect key="frame" x="157" y="201" width="222" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-nc-ni5">
-                                <rect key="frame" x="35" y="320" width="344" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-nc-ni5">
+                                <rect key="frame" x="35" y="294" width="344" height="23"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <color key="textColor" red="0.94117647058823528" green="0.59215686274509804" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de Donaciones en Especie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTs-tt-7FX">
-                                <rect key="frame" x="35" y="364" width="344" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de Donaciones en Especie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTs-tt-7FX">
+                                <rect key="frame" x="35" y="325" width="344" height="23.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdx-6r-Wf0">
-                                <rect key="frame" x="35" y="408" width="344" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdx-6r-Wf0">
+                                <rect key="frame" x="35" y="356.5" width="344" height="23"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.59215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-te-eJQ">
-                                <rect key="frame" x="35" y="459" width="344" height="339"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSD-rd-LVc">
+                                <rect key="frame" x="35" y="409.5" width="344" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3m-8a-MTW">
+                                <rect key="frame" x="35" y="441" width="344" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-Dd-pWz">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-B1-Cpb">
+                                        <rect key="frame" x="20" y="-95.5" width="304" height="425.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-pC-pRz">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="60.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gT-fK-Mdv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1gT-fK-Mdv" secondAttribute="height" multiplier="1:1" id="noV-cN-SbS"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqG-ti-d1Q">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="mqG-ti-d1Q" secondAttribute="height" multiplier="1:1" id="PA7-qJ-Vrw"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svE-bu-Vdz">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="svE-bu-Vdz" secondAttribute="height" multiplier="1:1" id="NBM-qL-i2e"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyu-cu-raK">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="iyu-cu-raK" secondAttribute="height" multiplier="1:1" id="ocA-hK-OWF"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH6-rr-eNl">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="qH6-rr-eNl" secondAttribute="height" multiplier="1:1" id="cqS-71-DId"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mqG-ti-d1Q" firstAttribute="width" secondItem="mqG-ti-d1Q" secondAttribute="height" multiplier="1:1" id="4AM-sf-QBM"/>
+                                                    <constraint firstItem="svE-bu-Vdz" firstAttribute="width" secondItem="svE-bu-Vdz" secondAttribute="height" multiplier="1:1" id="Ugh-s7-uQ4"/>
+                                                    <constraint firstItem="qH6-rr-eNl" firstAttribute="width" secondItem="qH6-rr-eNl" secondAttribute="height" multiplier="1:1" id="oLs-9j-reM"/>
+                                                    <constraint firstItem="iyu-cu-raK" firstAttribute="width" secondItem="iyu-cu-raK" secondAttribute="height" multiplier="1:1" id="xHh-eh-qlm"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOj-Ed-MdW">
+                                                <rect key="frame" x="0.0" y="60.5" width="304" height="61"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB8-V9-zNs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="oB8-V9-zNs" secondAttribute="height" multiplier="1:1" id="5RF-fw-i1i"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efI-Rw-djh">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="efI-Rw-djh" secondAttribute="height" multiplier="1:1" id="Kt3-2T-P1o"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-LM-AFv">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3tw-LM-AFv" secondAttribute="height" multiplier="1:1" id="b3R-rN-I8Z"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EN-bj-U4M">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="8EN-bj-U4M" secondAttribute="height" multiplier="1:1" id="ssr-hs-cT1"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geI-4J-kHR">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="geI-4J-kHR" secondAttribute="height" multiplier="1:1" id="r3H-Tn-03Q"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="geI-4J-kHR" firstAttribute="width" secondItem="geI-4J-kHR" secondAttribute="height" multiplier="1:1" id="1w2-zI-aEu"/>
+                                                    <constraint firstItem="3tw-LM-AFv" firstAttribute="width" secondItem="3tw-LM-AFv" secondAttribute="height" multiplier="1:1" id="DDz-zt-QxT"/>
+                                                    <constraint firstItem="efI-Rw-djh" firstAttribute="width" secondItem="efI-Rw-djh" secondAttribute="height" multiplier="1:1" id="NaH-ug-mSH"/>
+                                                    <constraint firstItem="8EN-bj-U4M" firstAttribute="width" secondItem="8EN-bj-U4M" secondAttribute="height" multiplier="1:1" id="ebm-2W-uqv"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-j1-olv">
+                                                <rect key="frame" x="0.0" y="121.5" width="304" height="61"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ms7-U0-9Bq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Ms7-U0-9Bq" secondAttribute="height" multiplier="1:1" id="fFR-XN-552"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYd-ey-f1p">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="MYd-ey-f1p" secondAttribute="height" multiplier="1:1" id="WTt-3j-gcN"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PV-Nz-pH4">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1PV-Nz-pH4" secondAttribute="height" multiplier="1:1" id="3V8-H5-aCn"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana_gris"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tas-V0-KvK">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tas-V0-KvK" secondAttribute="height" multiplier="1:1" id="8OY-w7-BuI"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-P7-AgD">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="0jD-P7-AgD" secondAttribute="height" multiplier="1:1" id="5uu-FK-Mkf"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="0jD-P7-AgD" firstAttribute="width" secondItem="0jD-P7-AgD" secondAttribute="height" multiplier="1:1" id="LLj-8v-o7h"/>
+                                                    <constraint firstItem="tas-V0-KvK" firstAttribute="width" secondItem="tas-V0-KvK" secondAttribute="height" multiplier="1:1" id="LUG-8o-ruP"/>
+                                                    <constraint firstItem="1PV-Nz-pH4" firstAttribute="width" secondItem="1PV-Nz-pH4" secondAttribute="height" multiplier="1:1" id="UmE-8R-aC5"/>
+                                                    <constraint firstItem="MYd-ey-f1p" firstAttribute="width" secondItem="MYd-ey-f1p" secondAttribute="height" multiplier="1:1" id="ZhZ-SM-q8O"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-F3-8Fw">
+                                                <rect key="frame" x="0.0" y="182.5" width="304" height="60.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efg-zg-f2B">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Efg-zg-f2B" secondAttribute="height" multiplier="1:1" id="DNN-S1-6JR"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana_gris"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spH-AK-1Li">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="spH-AK-1Li" secondAttribute="height" multiplier="1:1" id="ZKj-MV-yoM"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCP-XN-BMY">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LCP-XN-BMY" secondAttribute="height" multiplier="1:1" id="S9K-v4-QFu"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-YK-Nnh">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Shj-YK-Nnh" secondAttribute="height" multiplier="1:1" id="9wu-KJ-z6J"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR9-EZ-AGd">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="OR9-EZ-AGd" secondAttribute="height" multiplier="1:1" id="RVi-qk-fWb"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="OR9-EZ-AGd" firstAttribute="width" secondItem="OR9-EZ-AGd" secondAttribute="height" multiplier="1:1" id="0GY-79-18E"/>
+                                                    <constraint firstItem="spH-AK-1Li" firstAttribute="width" secondItem="spH-AK-1Li" secondAttribute="height" multiplier="1:1" id="Cr7-Gw-tJV"/>
+                                                    <constraint firstItem="Shj-YK-Nnh" firstAttribute="width" secondItem="Shj-YK-Nnh" secondAttribute="height" multiplier="1:1" id="Xh1-ei-Skf"/>
+                                                    <constraint firstItem="LCP-XN-BMY" firstAttribute="width" secondItem="LCP-XN-BMY" secondAttribute="height" multiplier="1:1" id="bKp-Qs-dsc"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfv-zA-Sw7">
+                                                <rect key="frame" x="0.0" y="243" width="304" height="61"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWF-c6-rXf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WWF-c6-rXf" secondAttribute="height" multiplier="1:1" id="7dB-zh-iWs"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-u6-gGA">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Hfj-u6-gGA" secondAttribute="height" multiplier="1:1" id="MjY-tR-oxy"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi4-sH-8Tj">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hi4-sH-8Tj" secondAttribute="height" multiplier="1:1" id="Iyn-9T-6Dd"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX3-1Q-hNs">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tX3-1Q-hNs" secondAttribute="height" multiplier="1:1" id="Wyf-oZ-wMx"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU2-cK-6AY">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="EU2-cK-6AY" secondAttribute="height" multiplier="1:1" id="j7M-DX-DBz"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="tX3-1Q-hNs" firstAttribute="width" secondItem="tX3-1Q-hNs" secondAttribute="height" multiplier="1:1" id="0NU-ay-9cp"/>
+                                                    <constraint firstItem="hi4-sH-8Tj" firstAttribute="width" secondItem="hi4-sH-8Tj" secondAttribute="height" multiplier="1:1" id="Cdh-qY-6sg"/>
+                                                    <constraint firstItem="Hfj-u6-gGA" firstAttribute="width" secondItem="Hfj-u6-gGA" secondAttribute="height" multiplier="1:1" id="P7d-Zz-N8A"/>
+                                                    <constraint firstItem="EU2-cK-6AY" firstAttribute="width" secondItem="EU2-cK-6AY" secondAttribute="height" multiplier="1:1" id="qlE-T2-7gN"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNP-SV-dWc">
+                                                <rect key="frame" x="0.0" y="304" width="304" height="60.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMz-9W-UWD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="QMz-9W-UWD" secondAttribute="height" multiplier="1:1" id="Zc3-wo-KiZ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wF-wB-FM5">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="5wF-wB-FM5" secondAttribute="height" multiplier="1:1" id="tiq-t5-CRL"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana_gris"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO0-ZQ-9Uo">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="UO0-ZQ-9Uo" secondAttribute="height" multiplier="1:1" id="3sy-rn-euF"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana_gris"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-cI-cgP">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="TUn-cI-cgP" secondAttribute="height" multiplier="1:1" id="lab-Du-4yn"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuf-5Q-kEa">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="60.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Wuf-5Q-kEa" secondAttribute="height" multiplier="1:1" id="GT3-wf-hl4"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="TUn-cI-cgP" firstAttribute="width" secondItem="TUn-cI-cgP" secondAttribute="height" multiplier="1:1" id="6BT-Cb-e51"/>
+                                                    <constraint firstItem="Wuf-5Q-kEa" firstAttribute="width" secondItem="Wuf-5Q-kEa" secondAttribute="height" multiplier="1:1" id="Wjr-rI-6l7"/>
+                                                    <constraint firstItem="UO0-ZQ-9Uo" firstAttribute="width" secondItem="UO0-ZQ-9Uo" secondAttribute="height" multiplier="1:1" id="ema-RF-TUM"/>
+                                                    <constraint firstItem="5wF-wB-FM5" firstAttribute="width" secondItem="5wF-wB-FM5" secondAttribute="height" multiplier="1:1" id="whQ-zr-tNQ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzY-y1-edf">
+                                                <rect key="frame" x="0.0" y="364.5" width="304" height="61"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyr-qF-fhd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="vyr-qF-fhd" secondAttribute="height" multiplier="1:1" id="SoQ-Ds-9cu"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKc-6k-nC0">
+                                                        <rect key="frame" x="61" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="oKc-6k-nC0" secondAttribute="height" multiplier="1:1" id="lvj-fG-TWJ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana_gris"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAy-hY-8Ty">
+                                                        <rect key="frame" x="121.5" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="HAy-hY-8Ty" secondAttribute="height" multiplier="1:1" id="PL2-1v-4hi"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana_gris"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5p2-3M-JiD">
+                                                        <rect key="frame" x="182.5" y="0.0" width="60.5" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="5p2-3M-JiD" secondAttribute="height" multiplier="1:1" id="L3Q-hW-rIO"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-mj-y2n">
+                                                        <rect key="frame" x="243" y="0.0" width="61" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="JW8-mj-y2n" secondAttribute="height" multiplier="1:1" id="I3K-UN-mUK"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Logo_BAG_manzana"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="oKc-6k-nC0" firstAttribute="width" secondItem="oKc-6k-nC0" secondAttribute="height" multiplier="1:1" id="1Uy-E8-sTv"/>
+                                                    <constraint firstItem="HAy-hY-8Ty" firstAttribute="width" secondItem="HAy-hY-8Ty" secondAttribute="height" multiplier="1:1" id="EZ2-Mo-4Mk"/>
+                                                    <constraint firstItem="JW8-mj-y2n" firstAttribute="width" secondItem="JW8-mj-y2n" secondAttribute="height" multiplier="1:1" id="QUl-Pi-MjW"/>
+                                                    <constraint firstItem="5p2-3M-JiD" firstAttribute="width" secondItem="5p2-3M-JiD" secondAttribute="height" multiplier="1:1" id="UMV-8M-ASB"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ozG-ER-miH" firstAttribute="trailing" secondItem="AJn-Dd-pWz" secondAttribute="trailing" id="5di-8M-Z9d"/>
-                                    <constraint firstItem="ozG-ER-miH" firstAttribute="bottom" secondItem="AJn-Dd-pWz" secondAttribute="bottom" constant="20" id="hXA-T5-HI4"/>
-                                    <constraint firstItem="AJn-Dd-pWz" firstAttribute="leading" secondItem="ozG-ER-miH" secondAttribute="leading" id="o0c-Na-drF"/>
+                                    <constraint firstItem="wdT-B1-Cpb" firstAttribute="leading" secondItem="LFg-OO-FSe" secondAttribute="leading" constant="20" id="KWR-FO-zBC"/>
+                                    <constraint firstItem="LFg-OO-FSe" firstAttribute="trailing" secondItem="wdT-B1-Cpb" secondAttribute="trailing" constant="20" id="YQW-of-UMc"/>
+                                    <constraint firstItem="LFg-OO-FSe" firstAttribute="bottom" secondItem="wdT-B1-Cpb" secondAttribute="bottom" constant="20" id="mma-xw-L89"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="uE4-Rs-j6J"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="ozG-ER-miH"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cg7-l0-bsk"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LFg-OO-FSe"/>
                             </scrollView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8n-TH-JNJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="khL-W3-qEK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Gh-kU-7zx" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="0nI-GO-5Wa"/>
+                            <constraint firstItem="lPB-wM-MMK" firstAttribute="top" secondItem="D2D-2h-jLS" secondAttribute="bottom" constant="25" id="550-0e-pWx"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="D2D-2h-jLS" secondAttribute="trailing" constant="35" id="5P2-hg-vzX"/>
+                            <constraint firstItem="lPB-wM-MMK" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="8CN-vG-qEp"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="hjj-nc-ni5" secondAttribute="trailing" constant="35" id="8DV-cV-MAp"/>
+                            <constraint firstItem="nJv-5d-wSp" firstAttribute="leading" secondItem="lPB-wM-MMK" secondAttribute="trailing" constant="18" id="Ctu-3i-AWu"/>
+                            <constraint firstItem="0Gh-kU-7zx" firstAttribute="top" secondItem="nJv-5d-wSp" secondAttribute="bottom" constant="46" id="DbO-0e-0nt"/>
+                            <constraint firstItem="0Gh-kU-7zx" firstAttribute="top" secondItem="lPB-wM-MMK" secondAttribute="bottom" constant="38" id="H8m-vL-rLP"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="wSD-rd-LVc" secondAttribute="trailing" constant="35" id="Jh5-gL-nbz"/>
+                            <constraint firstItem="Hdx-6r-Wf0" firstAttribute="top" secondItem="GTs-tt-7FX" secondAttribute="bottom" constant="8" id="L75-Sf-RkJ"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="GTs-tt-7FX" secondAttribute="trailing" constant="35" id="NGy-wV-E1L"/>
+                            <constraint firstItem="Hdx-6r-Wf0" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="O0a-UR-yUj"/>
+                            <constraint firstItem="wSD-rd-LVc" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="PRd-jb-voS"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="nJv-5d-wSp" secondAttribute="trailing" constant="35" id="T35-HV-yh0"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="0Gh-kU-7zx" secondAttribute="trailing" constant="35" id="Tbc-Mq-4VJ"/>
+                            <constraint firstItem="nJv-5d-wSp" firstAttribute="top" secondItem="D2D-2h-jLS" secondAttribute="bottom" constant="18" id="Tgh-yY-Kj3"/>
+                            <constraint firstItem="hjj-nc-ni5" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="VaL-Rk-zAx"/>
+                            <constraint firstItem="hjj-nc-ni5" firstAttribute="top" secondItem="0Gh-kU-7zx" secondAttribute="bottom" constant="8" id="XmT-uD-uQk"/>
+                            <constraint firstItem="GTs-tt-7FX" firstAttribute="top" secondItem="hjj-nc-ni5" secondAttribute="bottom" constant="8" id="ZMA-cM-CMv"/>
+                            <constraint firstItem="D2D-2h-jLS" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="a36-9Z-bZ0"/>
+                            <constraint firstItem="khL-W3-qEK" firstAttribute="trailing" secondItem="Hdx-6r-Wf0" secondAttribute="trailing" constant="35" id="jlj-Cr-J6Q"/>
+                            <constraint firstItem="GTs-tt-7FX" firstAttribute="leading" secondItem="khL-W3-qEK" secondAttribute="leading" constant="35" id="kYu-0E-sVO"/>
+                            <constraint firstItem="wSD-rd-LVc" firstAttribute="top" secondItem="Hdx-6r-Wf0" secondAttribute="bottom" constant="30" id="sd3-V3-Ipo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8J5-Tr-BIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -690,28 +1037,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-OF-NpB">
-                                <rect key="frame" x="40" y="94" width="344" height="41"/>
+                                <rect key="frame" x="40" y="94" width="245" height="41"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80W-Ac-kHp">
-                                <rect key="frame" x="20" y="166" width="374" height="197"/>
+                                <rect key="frame" x="20" y="166" width="275" height="197"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIZ-MH-sj2">
-                                <rect key="frame" x="40" y="402" width="334" height="29"/>
+                                <rect key="frame" x="40" y="402" width="235" height="29"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Descripcion del evento" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCC-ab-pSv">
-                                <rect key="frame" x="40" y="460" width="334" height="29"/>
+                                <rect key="frame" x="40" y="460" width="235" height="29"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8D-h6-CEk" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="721" width="314" height="41"/>
+                                <rect key="frame" x="50" y="721" width="215" height="41"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="HCO-sQ-Kgu"/>
@@ -888,6 +1235,7 @@
     <resources>
         <image name="Donations" width="376" height="360"/>
         <image name="Logo_BAG_manzana" width="508" height="565"/>
+        <image name="Logo_BAG_manzana_gris" width="1253" height="1364"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
