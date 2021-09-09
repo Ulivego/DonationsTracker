@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZY-ZL-Tal">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="yCZ-85-qw7">
+        <scene sceneID="DKM-P5-9cJ">
             <objects>
-                <navigationController id="Cpa-xK-Ifn" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QEk-NK-4Te">
+                <navigationController id="fZY-ZL-Tal" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KaH-lf-HpU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wdk-Mu-fYR"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="flq-GX-beA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s11-WQ-qmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIT-dN-o6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2188" y="-328"/>
+            <point key="canvasLocation" x="-3126" y="-993"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-YR-L5B">
-                                <rect key="frame" x="40" y="366" width="95" height="38.5"/>
+                                <rect key="frame" x="40" y="366" width="334" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +48,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-PX-f9g">
-                                <rect key="frame" x="40" y="488" width="95" height="34"/>
+                                <rect key="frame" x="40" y="488" width="334" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +56,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="574" width="75" height="50"/>
+                                <rect key="frame" x="50" y="574" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -76,6 +76,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzJ-hs-o9w"/>
+                                    <segue destination="4vi-DW-4f5" kind="show" id="WGO-EZ-0uH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-Cs-Rs0">
@@ -84,6 +85,7 @@
                                 <state key="normal" title="Crear una cuenta"/>
                                 <connections>
                                     <action selector="registerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Do4-me-xgk"/>
+                                    <segue destination="FJP-LB-MUa" kind="show" id="BiM-wu-FEN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="¿No tienes cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONL-cR-AjJ">
@@ -99,17 +101,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-xn-AXx">
-                                <rect key="frame" x="12.5" y="158" width="150" height="146"/>
+                                <rect key="frame" x="132" y="158" width="150" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BsK-RT-2Mh"/>
                                     <constraint firstAttribute="height" constant="146" id="FTL-bc-bho"/>
                                 </constraints>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOf-I1-8wO">
-                                <rect key="frame" x="-112" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="tRw-1I-wHX"/>
+                                    <navigationItem id="iHD-nP-QEV"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -140,16 +142,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64E-uM-AIe" secondAttribute="trailing" constant="50" id="x5h-iE-9VQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KSL-OJ-RuR"/>
+                    <navigationItem key="navigationItem" id="R6l-ZB-2tc"/>
                     <connections>
                         <outlet property="correoTF" destination="1ZG-YR-L5B" id="hZh-Vd-CzE"/>
                         <outlet property="passwordTF" destination="1wX-PX-f9g" id="L1w-1N-4KS"/>
-                        <segue destination="uTg-E3-bb0" kind="show" id="eJQ-lV-chL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1288" y="-335"/>
+            <point key="canvasLocation" x="-2293" y="-1028"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="5e2-gl-YQc">
@@ -241,11 +242,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-2w-Kng">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HdB-Vl-EPk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="Hhh-Sj-Ivo"/>
+                                    <navigationItem id="gLh-M2-hUl"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -266,11 +267,13 @@
                             <constraint firstItem="Sax-V2-qd6" firstAttribute="leading" secondItem="ZpC-ag-FW8" secondAttribute="leading" constant="22" id="s6f-FJ-8mb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2KT-Ki-5xq"/>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="C1I-RT-iJ6"/>
+                    <navigationItem key="navigationItem" id="S23-dh-kAi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er2-4P-SI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-454" y="-328"/>
+            <point key="canvasLocation" x="-791" y="-354"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="SNb-by-Bdk">
@@ -281,7 +284,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAF-O7-uue">
-                                <rect key="frame" x="22" y="184" width="370" height="23"/>
+                                <rect key="frame" x="22" y="228" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre(s)">
                                         <attributes>
@@ -293,7 +296,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-TH-e1N">
-                                <rect key="frame" x="22" y="88" width="370" height="52"/>
+                                <rect key="frame" x="22" y="132" width="370" height="52"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Registro">
                                         <attributes>
@@ -305,12 +308,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="bjf-94-obt">
-                                <rect key="frame" x="22" y="218" width="370" height="34"/>
+                                <rect key="frame" x="22" y="262" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="given-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zve-bJ-Wq5">
-                                <rect key="frame" x="22" y="274" width="370" height="23"/>
+                                <rect key="frame" x="22" y="318" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Apellidos(s)">
                                         <attributes>
@@ -322,7 +325,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyx-1p-PHp">
-                                <rect key="frame" x="22" y="364" width="370" height="23"/>
+                                <rect key="frame" x="22" y="408" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Correo Electrónico">
                                         <attributes>
@@ -335,7 +338,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH5-em-8bj">
-                                <rect key="frame" x="22" y="454" width="370" height="23"/>
+                                <rect key="frame" x="22" y="498" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Contraseña">
                                         <attributes>
@@ -348,7 +351,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXF-xS-Iwf">
-                                <rect key="frame" x="22" y="544" width="370" height="23"/>
+                                <rect key="frame" x="22" y="588" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Fecha de Nacimiento">
                                         <attributes>
@@ -360,17 +363,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-DQ-nSt">
-                                <rect key="frame" x="22" y="308" width="370" height="34"/>
+                                <rect key="frame" x="22" y="352" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daW-Z3-m2u">
-                                <rect key="frame" x="22" y="398" width="370" height="34"/>
+                                <rect key="frame" x="22" y="442" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-fx-8C8">
-                                <rect key="frame" x="22" y="488" width="370" height="34"/>
+                                <rect key="frame" x="22" y="532" width="370" height="34"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
@@ -441,10 +444,11 @@
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="DsS-Pa-d7i" secondAttribute="trailing" constant="44" id="zKM-g4-Cwh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UB6-H6-fcm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWG-Mo-4VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1126" y="305"/>
+            <point key="canvasLocation" x="-2254" y="-282"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="Sgb-4Q-C1o">
@@ -456,7 +460,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="C5a-5b-Fsm" customClass="EventViewCell" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C5a-5b-Fsm" id="U2E-4B-H4G">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -497,9 +501,28 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bF-NP-Hga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231.8840579710145" y="-340.17857142857139"/>
+            <point key="canvasLocation" x="-46" y="-340"/>
         </scene>
-        <!--Make Donations View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vx1-6W-Hvf">
+            <objects>
+                <tabBarController id="4vi-DW-4f5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qk3-rb-sKj"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PSA-KC-NAF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uTg-E3-bb0" kind="relationship" relationship="viewControllers" id="R6X-X7-hnI"/>
+                        <segue destination="JUQ-qm-KVS" kind="relationship" relationship="viewControllers" id="hLf-sb-cp9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rc4-pp-gWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-1177"/>
+        </scene>
+        <!--Donar-->
         <scene sceneID="fYq-3q-QQ8">
             <objects>
                 <viewController id="JUQ-qm-KVS" customClass="MakeDonationsViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -569,10 +592,12 @@
                         <viewLayoutGuide key="safeArea" id="b1t-gx-M4g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Donar" id="QGW-Lb-L9h"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNV-mI-KKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895.6521739130435" y="-340.17857142857139"/>
+            <point key="canvasLocation" x="832" y="-354"/>
         </scene>
         <!--Economic Donations View Controller-->
         <scene sceneID="BUJ-mk-Jjr">
@@ -755,7 +780,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZg-7o-SI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="305"/>
+            <point key="canvasLocation" x="90" y="321"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="t9T-kG-6Pf">
@@ -862,7 +887,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFe-cK-sK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1833.3333333333335" y="-350.22321428571428"/>
+            <point key="canvasLocation" x="-742" y="321"/>
         </scene>
     </scenes>
     <designables>
