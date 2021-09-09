@@ -23,9 +23,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIT-dN-o6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3126" y="-993"/>
+            <point key="canvasLocation" x="-3141" y="-1029"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Iniciar Sesión-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-YR-L5B">
-                                <rect key="frame" x="40" y="366" width="334" height="38.5"/>
+                                <rect key="frame" x="40" y="366" width="95" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +48,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-PX-f9g">
-                                <rect key="frame" x="40" y="488" width="334" height="34"/>
+                                <rect key="frame" x="40" y="488" width="95" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +56,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="574" width="314" height="50"/>
+                                <rect key="frame" x="50" y="574" width="75" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -101,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-xn-AXx">
-                                <rect key="frame" x="132" y="158" width="150" height="146"/>
+                                <rect key="frame" x="12.5" y="158" width="150" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BsK-RT-2Mh"/>
                                     <constraint firstAttribute="height" constant="146" id="FTL-bc-bho"/>
@@ -142,7 +142,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64E-uM-AIe" secondAttribute="trailing" constant="50" id="x5h-iE-9VQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R6l-ZB-2tc"/>
+                    <navigationItem key="navigationItem" title="Iniciar Sesión" id="R6l-ZB-2tc"/>
                     <connections>
                         <outlet property="correoTF" destination="1ZG-YR-L5B" id="hZh-Vd-CzE"/>
                         <outlet property="passwordTF" destination="1wX-PX-f9g" id="L1w-1N-4KS"/>
@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="-2293" y="-1028"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Más Necesitados-->
         <scene sceneID="5e2-gl-YQc">
             <objects>
-                <viewController id="uTg-E3-bb0" customClass="HomeViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Más Necesitados" id="uTg-E3-bb0" customClass="HomeViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Tp-mq-LTJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,13 +242,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HdB-Vl-EPk">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="gLh-M2-hUl"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZpC-ag-FW8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -268,7 +261,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="C1I-RT-iJ6"/>
-                    <navigationItem key="navigationItem" id="S23-dh-kAi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er2-4P-SI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -448,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWG-Mo-4VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2254" y="-282"/>
+            <point key="canvasLocation" x="-2294" y="-284"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="Sgb-4Q-C1o">
@@ -501,13 +493,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bF-NP-Hga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="-340"/>
+            <point key="canvasLocation" x="14" y="-354"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vx1-6W-Hvf">
             <objects>
                 <tabBarController id="4vi-DW-4f5" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="qk3-rb-sKj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PSA-KC-NAF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -522,10 +513,10 @@
             </objects>
             <point key="canvasLocation" x="-1" y="-1177"/>
         </scene>
-        <!--Donar-->
+        <!--¿Quieres Ayudar?-->
         <scene sceneID="fYq-3q-QQ8">
             <objects>
-                <viewController id="JUQ-qm-KVS" customClass="MakeDonationsViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="¿Quieres Ayudar?" id="JUQ-qm-KVS" customClass="MakeDonationsViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tby-hJ-QY7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
