@@ -16,7 +16,7 @@ import Firebase
     let role: String?
     let birthDate: Date?
     
-    init(authData: Firebase.User) {
+    init(authData: Firebase.) {
         email = authData.email ?? ""
         firstName = authData.firstName?
         lastName = authData.lastName?
