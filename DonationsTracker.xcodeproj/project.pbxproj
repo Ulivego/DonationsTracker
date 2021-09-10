@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82107B1C26EBF3BD00FC5073 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82107B1B26EBF3BD00FC5073 /* PreferenceViewController.swift */; };
 		A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */; };
 		A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */; };
 		A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82107B1B26EBF3BD00FC5073 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonationsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		FC73F6AE26DFC9EE00337E29 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82107B1B26EBF3BD00FC5073 /* PreferenceViewController.swift */,
 				A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */,
 				FC73F69626DFC96200337E29 /* SignUpViewController.swift */,
 				FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */,
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82107B1C26EBF3BD00FC5073 /* PreferenceViewController.swift in Sources */,
 				A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */,
 				FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */,
 				B4F0DD0F26EA777C008543EB /* ProductCollectionViewCell.swift in Sources */,
