@@ -438,6 +438,135 @@
             <point key="canvasLocation" x="-1126" y="305"/>
         </scene>
 
+        <!--View Controller-->
+        <scene sceneID="meh-pb-dXQ">
+            <objects>
+                <viewController id="odG-BX-9cz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="cI9-gf-GlN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOb-dK-IiT">
+                                <rect key="frame" x="22" y="66" width="370" height="41"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHZ-GU-bos">
+                                <rect key="frame" x="22" y="151" width="89" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Donador">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Experto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSU-fK-8jW">
+                                <rect key="frame" x="119" y="151" width="273" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCz-NW-zHA">
+                                <rect key="frame" x="22" y="218" width="370" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeP-HZ-MNH">
+                                <rect key="frame" x="22" y="263.5" width="370" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.59215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Familias Alimentadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-MZ-wEz">
+                                <rect key="frame" x="22" y="330.5" width="370" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Familias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hY-TI-ikm">
+                                <rect key="frame" x="22" y="376" width="370" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.59215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu0-B6-X7a">
+                                <rect key="frame" x="22" y="443" width="370" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-OO-wco">
+                                <rect key="frame" x="22" y="477.5" width="370" height="362.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3ph-I4-g89">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BadgeViewCell" id="sSW-T9-BuH">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j9R-7h-7ya">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imP-Az-7k1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="imP-Az-7k1" secondAttribute="height" multiplier="1:1" id="R6B-8e-wlX"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Logo_BAG_manzana"/>
+                                                </button>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gmo-Qm-r84"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tCz-NW-zHA" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="3EY-JO-I1O"/>
+                            <constraint firstItem="eeP-HZ-MNH" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="3q8-Hb-1AH"/>
+                            <constraint firstItem="pu0-B6-X7a" firstAttribute="top" secondItem="0hY-TI-ikm" secondAttribute="bottom" constant="44" id="5dD-A9-ey8"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="PSU-fK-8jW" secondAttribute="trailing" constant="22" id="5fk-eL-DtM"/>
+                            <constraint firstItem="LHZ-GU-bos" firstAttribute="top" secondItem="IOb-dK-IiT" secondAttribute="bottom" constant="44" id="DDC-w2-rms"/>
+                            <constraint firstItem="tCz-NW-zHA" firstAttribute="top" secondItem="PSU-fK-8jW" secondAttribute="bottom" constant="44" id="Eec-kp-8EB"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="pu0-B6-X7a" secondAttribute="trailing" constant="22" id="Hjf-cB-hbW"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="eeP-HZ-MNH" secondAttribute="trailing" constant="22" id="IHQ-lm-02r"/>
+                            <constraint firstItem="pu0-B6-X7a" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="Il5-xP-X4S"/>
+                            <constraint firstItem="nOM-OO-wco" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="T1C-OR-PtG"/>
+                            <constraint firstItem="IOb-dK-IiT" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="Z5i-kH-EiI"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="IOb-dK-IiT" secondAttribute="trailing" constant="22" id="cd9-cE-7IG"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="bottom" secondItem="nOM-OO-wco" secondAttribute="bottom" constant="22" id="du4-kw-Ucl"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="tCz-NW-zHA" secondAttribute="trailing" constant="22" id="e33-9m-sAD"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="nOM-OO-wco" secondAttribute="trailing" constant="22" id="f4h-aj-tCn"/>
+                            <constraint firstItem="0hY-TI-ikm" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="jPK-UC-FjA"/>
+                            <constraint firstItem="0hY-TI-ikm" firstAttribute="top" secondItem="Gbg-MZ-wEz" secondAttribute="bottom" constant="22" id="jzh-40-hjW"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="0hY-TI-ikm" secondAttribute="trailing" constant="22" id="l1T-Wc-6lw"/>
+                            <constraint firstItem="LHZ-GU-bos" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="pt6-1r-wpe"/>
+                            <constraint firstItem="PSU-fK-8jW" firstAttribute="leading" secondItem="LHZ-GU-bos" secondAttribute="trailing" id="qfG-Mo-yTD"/>
+                            <constraint firstItem="eeP-HZ-MNH" firstAttribute="top" secondItem="tCz-NW-zHA" secondAttribute="bottom" constant="22" id="rDW-ho-3G6"/>
+                            <constraint firstItem="Gbg-MZ-wEz" firstAttribute="leading" secondItem="gmo-Qm-r84" secondAttribute="leading" constant="22" id="sXR-xR-lKW"/>
+                            <constraint firstItem="nOM-OO-wco" firstAttribute="top" secondItem="pu0-B6-X7a" secondAttribute="bottom" constant="11" id="uir-M8-Nfq"/>
+                            <constraint firstItem="gmo-Qm-r84" firstAttribute="trailing" secondItem="Gbg-MZ-wEz" secondAttribute="trailing" constant="22" id="vFH-u0-0jH"/>
+                            <constraint firstItem="Gbg-MZ-wEz" firstAttribute="top" secondItem="eeP-HZ-MNH" secondAttribute="bottom" constant="44" id="x0r-aK-vtf"/>
+                            <constraint firstItem="PSU-fK-8jW" firstAttribute="top" secondItem="LHZ-GU-bos" secondAttribute="top" id="ynZ-9s-pwc"/>
+                            <constraint firstItem="IOb-dK-IiT" firstAttribute="top" secondItem="gmo-Qm-r84" secondAttribute="top" constant="22" id="zcN-vF-7gN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRE-yA-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.72463768115944" y="334.82142857142856"/>
+        </scene>
         <!--Make Donations View Controller-->
         <scene sceneID="fYq-3q-QQ8">
             <objects>
@@ -625,11 +754,9 @@
         <designable name="64E-uM-AIe">
             <size key="intrinsicContentSize" width="75" height="47"/>
         </designable>
-
         <designable name="6vx-9k-cQf">
             <size key="intrinsicContentSize" width="145" height="42"/>
         </designable>
-
         <designable name="S0J-Jg-wa6">
             <size key="intrinsicContentSize" width="180" height="42"/>
         </designable>
@@ -660,6 +787,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
