@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -41,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-YR-L5B">
-                                <rect key="frame" x="40" y="366" width="334" height="38.5"/>
+                                <rect key="frame" x="40" y="366" width="95" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,7 +50,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-PX-f9g">
-                                <rect key="frame" x="40" y="488" width="334" height="34"/>
+                                <rect key="frame" x="40" y="488" width="95" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +58,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="574" width="314" height="50"/>
+                                <rect key="frame" x="50" y="574" width="75" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -100,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-xn-AXx">
-                                <rect key="frame" x="132" y="158" width="150" height="146"/>
+                                <rect key="frame" x="12.5" y="158" width="150" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BsK-RT-2Mh"/>
                                     <constraint firstAttribute="height" constant="146" id="FTL-bc-bho"/>
@@ -873,6 +874,48 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8J5-Tr-BIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="C5a-5b-Fsm" customClass="EventViewCell" customModule="DonationsTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C5a-5b-Fsm" id="U2E-4B-H4G">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COO-vO-K3i">
+                                            <rect key="frame" x="11" y="11" width="392" height="178"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Campaña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-5V-b3R">
+                                            <rect key="frame" x="11" y="160" width="392" height="29"/>
+                                            <color key="backgroundColor" red="1" green="0.9861351612" blue="0.9965337903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="COO-vO-K3i" firstAttribute="top" secondItem="U2E-4B-H4G" secondAttribute="top" constant="11" id="8NF-Ij-Sc9"/>
+                                        <constraint firstItem="COO-vO-K3i" firstAttribute="leading" secondItem="U2E-4B-H4G" secondAttribute="leading" constant="11" id="Eoo-hd-msn"/>
+                                        <constraint firstAttribute="bottom" secondItem="COO-vO-K3i" secondAttribute="bottom" constant="11" id="G38-i5-ghF"/>
+                                        <constraint firstAttribute="trailing" secondItem="COO-vO-K3i" secondAttribute="trailing" constant="11" id="NlW-XY-2dZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="D1g-5V-b3R" secondAttribute="trailing" id="OLL-jn-KSv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="D1g-5V-b3R" secondAttribute="bottom" id="Wuq-ho-37m"/>
+                                        <constraint firstItem="D1g-5V-b3R" firstAttribute="leading" secondItem="U2E-4B-H4G" secondAttribute="leadingMargin" id="qmF-nd-G9k"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="EventLabelName" destination="D1g-5V-b3R" id="4QT-KZ-E0A"/>
+                                    <outlet property="eventImage" destination="COO-vO-K3i" id="3RF-39-ePb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="deZ-x2-eEz" id="Hrd-Q5-pzh"/>
+                            <outlet property="delegate" destination="deZ-x2-eEz" id="en8-qG-q4g"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bF-NP-Hga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-455" y="335"/>
         </scene>
@@ -1062,6 +1105,10 @@
         <designable name="64E-uM-AIe">
             <size key="intrinsicContentSize" width="75" height="47"/>
         </designable>
+
+        <designable name="6vx-9k-cQf">
+            <size key="intrinsicContentSize" width="145" height="42"/>
+        </designable>
         <designable name="S0J-Jg-wa6">
             <size key="intrinsicContentSize" width="180" height="42"/>
         </designable>
@@ -1078,7 +1125,9 @@
     <resources>
         <image name="Donations" width="376" height="360"/>
         <image name="Logo_BAG_manzana" width="508" height="565"/>
+
         <image name="Logo_BAG_manzana_gris" width="1253" height="1364"/>
+
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
