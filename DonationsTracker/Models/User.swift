@@ -8,24 +8,24 @@
 
 import Firebase
 
-struct User{
+/*struct User{
     let email: String
-    let firstName: String
-    let lastName: String
-    let password: String
-    let role: String
-    let birthDate: Date
+    let firstName: String?
+    let lastName: String?
+    let password: String?
+    let role: String?
+    let birthDate: Date?
     
-    init(authData: Firebase.User) {
+    init(authData: Firebase.) {
         email = authData.email ?? ""
-        firstName = authData.firstName
-        lastName = authData.lastName
-        password = authData.password
-        role = authData.role
-        birthDate = authData.birthDate
+        firstName = authData.firstName?
+        lastName = authData.lastName?
+        password = authData.password?
+        role = authData.role?
+        birthDate = authData.birthDate?
     }
     
-    init(email: String, firstName: String, lastName: String, password: String, role:String, birthDate: String) {
+    init(email: String, firstName: String, lastName: String, password: String, role:String, birthDate: Date) {
         self.email = email
         self.firstName = firstName
         self.lastName = lastName
@@ -34,4 +34,4 @@ struct User{
         self.birthDate = birthDate
     }
     
-}
+}*/
