@@ -12,7 +12,7 @@ This is the repository of Team Number 5. In this repository we will be uploading
 Alimentos de Guadalajara" using Swift. As of now the name of our project is "Donations Tracker" but this is only a plca holder name, since we haven't decided 
 on the name of the application.
 
-##Etapa 3: Desarrollo
+## Etapa 3: Desarrollo
 En esta etapa creamos este repositorio, puesto que en esta etapa pasamos a ya comenzar el desarrollo de la aplicación. Para este entregable desarrollamos 
 las seis principales "Vistas" que va a llevar nuestra aplicación. Las Vistas son las siguientes:
 - Sign In
