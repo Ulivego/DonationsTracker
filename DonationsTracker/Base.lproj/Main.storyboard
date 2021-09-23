@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZY-ZL-Tal">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -168,7 +167,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-MI-llc">
                                 <rect key="frame" x="10" y="246" width="394" height="568"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -441,7 +439,6 @@
             </objects>
             <point key="canvasLocation" x="-2138" y="-354"/>
         </scene>
-
         <!--Tab Bar Controller-->
         <scene sceneID="Vx1-6W-Hvf">
             <objects>
@@ -461,7 +458,6 @@
             </objects>
             <point key="canvasLocation" x="77" y="-1121"/>
         </scene>
-      
         <!--View Controller-->
         <scene sceneID="meh-pb-dXQ">
             <objects>
@@ -691,7 +687,6 @@
             </objects>
             <point key="canvasLocation" x="1102.8985507246377" y="339.50892857142856"/>
         </scene>
-      
         <!--¿Quieres Ayudar?-->
         <scene sceneID="fYq-3q-QQ8">
             <objects>
@@ -721,6 +716,9 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SpeciesDonBtn:" destination="JUQ-qm-KVS" eventType="touchUpInside" id="j7V-ni-5xi"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Donations" translatesAutoresizingMaskIntoConstraints="NO" id="gRg-bI-ZS2">
                                 <rect key="frame" x="87" y="183" width="240" height="214"/>
@@ -744,7 +742,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="wy8-Op-Oty" kind="presentation" id="jkd-a1-hNM"/>
+                                    <action selector="EconomicDonBtn:" destination="JUQ-qm-KVS" eventType="touchUpInside" id="kkv-Qn-4Jn"/>
+                                    <segue destination="wy8-Op-Oty" kind="presentation" identifier="makeDonationsToEconomic" id="7CQ-8Z-9sP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sólo productos de alimentación, limpieza " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr1-hv-HvP">
@@ -772,7 +771,6 @@
             </objects>
             <point key="canvasLocation" x="904" y="-373"/>
         </scene>
-      
         <!--Economic Donations View Controller-->
         <scene sceneID="BUJ-mk-Jjr">
             <objects>
