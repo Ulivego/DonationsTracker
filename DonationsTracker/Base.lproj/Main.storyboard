@@ -249,11 +249,10 @@
                         <constraints>
                             <constraint firstItem="w2Q-Ub-go3" firstAttribute="top" secondItem="o4T-2w-Kng" secondAttribute="bottom" constant="20" id="0TW-gS-Plq"/>
                             <constraint firstItem="w2Q-Ub-go3" firstAttribute="leading" secondItem="ZpC-ag-FW8" secondAttribute="leading" constant="20" id="0er-Du-Ffg"/>
-                            <constraint firstItem="bO0-MI-llc" firstAttribute="leading" secondItem="ZpC-ag-FW8" secondAttribute="leading" constant="10" id="Bze-u8-Lk4"/>
-                            <constraint firstItem="bO0-MI-llc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="w2Q-Ub-go3" secondAttribute="bottom" constant="30" id="bXa-nT-KJs"/>
-                            <constraint firstItem="ZpC-ag-FW8" firstAttribute="trailing" secondItem="bO0-MI-llc" secondAttribute="trailing" constant="10" id="dU4-TE-qzv"/>
+                            <constraint firstItem="bO0-MI-llc" firstAttribute="leading" secondItem="ZpC-ag-FW8" secondAttribute="leading" constant="10" id="8ZU-Cl-Ck0"/>
+                            <constraint firstItem="bO0-MI-llc" firstAttribute="top" secondItem="w2Q-Ub-go3" secondAttribute="bottom" constant="40" id="Eso-tW-g1z"/>
+                            <constraint firstItem="ZpC-ag-FW8" firstAttribute="trailing" secondItem="bO0-MI-llc" secondAttribute="trailing" constant="10" id="SIl-FY-rL1"/>
                             <constraint firstItem="ZpC-ag-FW8" firstAttribute="trailing" secondItem="w2Q-Ub-go3" secondAttribute="trailing" constant="20" id="mbq-Ra-JFy"/>
-                            <constraint firstItem="ZpC-ag-FW8" firstAttribute="bottom" secondItem="bO0-MI-llc" secondAttribute="bottom" constant="10" id="tIE-n4-YmX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2KT-Ki-5xq"/>
