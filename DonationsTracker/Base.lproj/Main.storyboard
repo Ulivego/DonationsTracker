@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-YR-L5B">
-                                <rect key="frame" x="40" y="366" width="95" height="38.5"/>
+                                <rect key="frame" x="40" y="366" width="334" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +50,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-PX-f9g">
-                                <rect key="frame" x="40" y="488" width="95" height="34"/>
+                                <rect key="frame" x="40" y="488" width="334" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,7 +58,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="574" width="75" height="50"/>
+                                <rect key="frame" x="50" y="574" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-xn-AXx">
-                                <rect key="frame" x="12.5" y="114" width="150" height="146"/>
+                                <rect key="frame" x="132" y="114" width="150" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BsK-RT-2Mh"/>
                                     <constraint firstAttribute="height" constant="146" id="FTL-bc-bho"/>
@@ -387,6 +387,9 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerBtn:" destination="FJP-LB-MUa" eventType="touchUpInside" id="gLE-o4-6z1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmm-ex-hmt"/>
@@ -434,6 +437,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UB6-H6-fcm"/>
+                    <connections>
+                        <outlet property="apellidoTF" destination="MN8-DQ-nSt" id="Is0-TM-pOA"/>
+                        <outlet property="birthDatePicker" destination="wC3-h4-Pif" id="OmZ-yW-wNG"/>
+                        <outlet property="correoTF" destination="daW-Z3-m2u" id="MMS-tQ-ndz"/>
+                        <outlet property="nombreTF" destination="bjf-94-obt" id="PFU-Kb-rbC"/>
+                        <outlet property="passwordTF" destination="h9w-fx-8C8" id="yzH-9T-BMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWG-Mo-4VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
