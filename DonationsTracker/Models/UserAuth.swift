@@ -12,7 +12,6 @@ struct UserAuth {
     let userId: String
     let email: String
     
-    
     init(authData: Firebase.User) {
         userId = authData.uid
         email = authData.email ?? ""
