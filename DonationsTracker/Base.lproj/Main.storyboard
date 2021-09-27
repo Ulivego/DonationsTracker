@@ -77,9 +77,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzJ-hs-o9w"/>
                                     <action selector="loginDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgn-lD-g9t"/>
-                                    <segue destination="uTg-E3-bb0" kind="show" identifier="LoginToMain" id="WqO-8A-dkC"/>
+                                    <segue destination="uTg-E3-bb0" kind="show" identifier="LoginToMain" id="7Ew-19-6u7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-Cs-Rs0">
@@ -763,6 +762,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="QGW-Lb-L9h"/>
+                    <navigationItem key="navigationItem" id="B5C-kx-kL8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNV-mI-KKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -898,7 +898,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="WqO-8A-dkC"/>
+        <segue reference="7Ew-19-6u7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Donations" width="376" height="360"/>
