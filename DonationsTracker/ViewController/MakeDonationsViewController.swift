@@ -16,13 +16,13 @@ class MakeDonationsViewController: UIViewController {
     
     
     @IBAction func EconomicDonBtn(_ sender: Any) {
-        var value = 1
+        /*var value = 1
         let object: [String: Any] = [
             "name": "Economic Donation" as NSObject,
             "id": value
         ]
         database.child("Other").childByAutoId().setValue(object)
-        value += 1
+        value += 1*/
         
     }
     
