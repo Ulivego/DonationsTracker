@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,8 +15,9 @@
         <scene sceneID="DKM-P5-9cJ">
             <objects>
                 <navigationController id="fZY-ZL-Tal" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="35Z-Bd-L1j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KaH-lf-HpU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -80,7 +79,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgn-lD-g9t"/>
-                                    <segue destination="uTg-E3-bb0" kind="show" identifier="LoginToMain" id="7Ew-19-6u7"/>
+                                    <segue destination="fZY-ZL-Tal" kind="show" id="wzI-dZ-PLq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-Cs-Rs0">
@@ -694,7 +693,7 @@
             <objects>
                 <viewController title="¿Quieres Ayudar?" id="JUQ-qm-KVS" customClass="MakeDonationsViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tby-hJ-QY7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Quieres ayudar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy2-mb-7f4">
@@ -952,9 +951,6 @@
             <size key="intrinsicContentSize" width="222" height="42"/>
         </designable>
     </designables>
-    <inferredMetricsTieBreakers>
-        <segue reference="7Ew-19-6u7"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Donations" width="376" height="360"/>
         <image name="Logo_BAG_manzana" width="508" height="565"/>
