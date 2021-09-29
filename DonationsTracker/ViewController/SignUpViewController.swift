@@ -20,7 +20,10 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
     }
 
     @IBAction func registerBtn(_ sender: AnyObject) {
@@ -38,9 +41,13 @@ class SignUpViewController: UIViewController {
                 Auth.auth().signIn(withEmail: email, password: password)
             }
             else{
-                print("Error in create User: \(error)")
+                print("Error in create User: \(error?.localizedDescription ?? "Undefined")")
             }
         }
+    }
+    
+    @objc func keyboardDismiss() {
+        view.endEditing(true)
     }
     
 }
