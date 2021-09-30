@@ -8,7 +8,7 @@
 
 import Firebase
 
-struct Goals{
+struct Goal {
     let reference: DatabaseReference?
     let key: String
     let product: String
