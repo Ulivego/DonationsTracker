@@ -6,7 +6,7 @@
 //  Copyright © 2021 Team5. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let identifier = "Item"
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ProductCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ProductCell
         cell.productLabel.text = productNames[indexPath.row]
         cell.progressBar.progressTintColor = UIColor.red
         cell.progressBar.progressViewStyle = .bar
@@ -35,4 +35,4 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     
-}
+}*/

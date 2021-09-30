@@ -10,16 +10,13 @@ import UIKit
 import FirebaseDatabase
 
 class GoalsViewController:
-    UICollectionViewController {
-    
-    //vincular el viewCollection
-    @IBOutlet var goalsCollectionView: UICollectionView!
+    UITableViewController {
     
     var products: [Goal] = []
     
     private let ref = Database.database().reference()
     
-    //var refObservers: [DatabaseHandle] = []
+    private var refObservers: [DatabaseHandle] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +27,8 @@ class GoalsViewController:
         
         print("Hello")
         
-        ref.child("Goals").getData { (error, snapshot) in
-            if let error = error {
-                print("Error getting data")
-            }
-            else if snapshot.exists() {
+        let goals = ref.child("Goals").observe(.value){ snapshot in
+            
                 print("Got data")
                 var newGoals: [Goal] = []
                 for child in snapshot.children {
@@ -43,16 +37,16 @@ class GoalsViewController:
                         let goal = Goal(snapshot: snapshot) {
                         print("Goals are being included")
                         newGoals.append(goal)
-                }
+                    }
                     else{
                         print(snapshot.value as Any)
                         print("something went wrong")
                     }
                 }
                 self.products = newGoals
-                self.goalsCollectionView.reloadData()
+                self.tableView.reloadData()
             }
-        }
+        refObservers.append(goals)
         
         /*
         database.child("product1").observe( .value, with:{snapshot in
@@ -64,24 +58,36 @@ class GoalsViewController:
         */
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 5; //Hardcodeado de mientras
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        refObservers.forEach(ref.removeObserver(withHandle:))
+        refObservers = []
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> ProductCollectionViewCell {
-        let identifier = "Item"
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ProductCollectionViewCell
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Item Cell", for: indexPath) as! ProductCell
         
         let goal = products[indexPath.row]
         
         cell.productLabel.text = goal.product //Ver como dar valor
         cell.donadosLabel.text = String(goal.progress)
         cell.objetivoLabel.text = String(goal.goal)
+        cell.progressBar.setProgress(Float((goal.progress / goal.goal)) , animated: true)
         
         return cell
     }
     
-    @IBAction func tapAddProduct(_ sender: UIButton) {
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+      }
+    
+
+    @IBAction func tapAddProduct(_ sender: Any) {
         let alert = UIAlertController(title: "Save product", message: "Guardar Producto", preferredStyle: .alert)
         
         alert.addTextField { (textField) in textField.placeholder = "Enter the products name"}
@@ -101,13 +107,12 @@ class GoalsViewController:
                     "progress": 0,
                     "goal": goalText
                 ]
-                
-                print("User text: \(productText)")
+                self.ref.child("Goals").childByAutoId().setValue(object)
             }
                
         }))
            
-        self.ref.child("Goals").childByAutoId().setValue(object)
+        
            
         self.present(alert, animated: true, completion: nil)
     }
