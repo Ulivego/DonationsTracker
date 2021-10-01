@@ -15,6 +15,7 @@
         <scene sceneID="DKM-P5-9cJ">
             <objects>
                 <navigationController id="fZY-ZL-Tal" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0yd-Qz-pIa"/>
                     <navigationItem key="navigationItem" id="35Z-Bd-L1j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KaH-lf-HpU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -149,6 +150,7 @@
                     <connections>
                         <outlet property="correoTF" destination="1ZG-YR-L5B" id="hZh-Vd-CzE"/>
                         <outlet property="passwordTF" destination="1wX-PX-f9g" id="L1w-1N-4KS"/>
+                        <segue destination="fZY-ZL-Tal" kind="show" identifier="LoginToMain" id="Eia-C5-h0k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -388,6 +390,9 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerBtn:" destination="FJP-LB-MUa" eventType="touchUpInside" id="gLE-o4-6z1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmm-ex-hmt"/>
@@ -435,6 +440,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UB6-H6-fcm"/>
+                    <connections>
+                        <outlet property="apellidoTF" destination="MN8-DQ-nSt" id="Is0-TM-pOA"/>
+                        <outlet property="birthDatePicker" destination="wC3-h4-Pif" id="OmZ-yW-wNG"/>
+                        <outlet property="correoTF" destination="daW-Z3-m2u" id="MMS-tQ-ndz"/>
+                        <outlet property="nombreTF" destination="bjf-94-obt" id="PFU-Kb-rbC"/>
+                        <outlet property="passwordTF" destination="h9w-fx-8C8" id="yzH-9T-BMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWG-Mo-4VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

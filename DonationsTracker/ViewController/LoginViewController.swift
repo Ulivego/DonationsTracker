@@ -47,22 +47,17 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: false)
         handle = Auth.auth().addStateDidChangeListener{ _, user in
-            if user == nil{
-                self.navigationController?.popToRootViewController(animated: true)
-            }
-            else {
+            if user != nil{
                 self.performSegue(withIdentifier: self.loginToList, sender: nil)
                 self.correoTF.text = nil
                 self.passwordTF.text = nil
             }
+            else {
+                self.navigationController?.popToRootViewController(animated: true)
+            }
         }
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -85,6 +80,7 @@ class LoginViewController: UIViewController {
         // Start login
         Auth.auth().signIn(withEmail: email, password: password){
             user, error in
+            print(user)
             if let error = error, user == nil{
                 let alert = UIAlertController(
                     title: "Sign in failed",
@@ -96,35 +92,6 @@ class LoginViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
-    }
-
-    /*@IBAction func loginBtn(_ sender: Any) {
-        
-        if  let email = correoTF.text,
-            let password = passwordTF.text {
-            Auth.auth().createUser(withEmail: email, password: password) {
-                (result, error) in
-                
-                if let result = result, error == nil {
-                    
-                    
-                    
-                } else {
-                    let alertController = UIAlertController(title: "Error",
-                        message:
-                                "Se ha producido un error al registrar el usuario",
-                        preferredStyle: .alert)
-                    
-                    alertController.addAction(UIAlertAction(title: "Aceptar",
-                        style: .default))
-                    self.present(alertController, animated: true, completion: nil)
-                }
-                
-            }
-        }
-    }*/
-    
-    @IBAction func registerBtn(_ sender: Any) {
     }
     
     @objc func keyboardDismiss() {
