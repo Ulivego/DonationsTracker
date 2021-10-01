@@ -12,10 +12,10 @@ struct Goal {
     let reference: DatabaseReference?
     let key: String
     let product: String
-    let progress: Double
-    let goal: Double
+    let progress: Int
+    let goal: Int
     
-    init(product: String, progress: Double, goal: Double, key: String = ""){
+    init(product: String, progress: Int, goal: Int, key: String = ""){
         self.reference = nil
         self.key = key
         self.product = product
@@ -28,8 +28,8 @@ struct Goal {
         guard
             let value = snapshot.value as? [String: AnyObject],
             let product = value["product"] as? String,
-            let progress = value["progress"] as? Double,
-            let goal = value["goal"] as? Double
+            let progress = value["progress"] as? Int,
+            let goal = value["goal"] as? Int
         else {
             return nil
         }

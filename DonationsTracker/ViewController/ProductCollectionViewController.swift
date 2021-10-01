@@ -20,42 +20,34 @@ class GoalsViewController:
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let goals = ref.child("Goals").observe(.value){ snapshot in
+            
+            var newGoals: [Goal] = []
+            for child in snapshot.children {
+                if
+                    let snapshot = child as? DataSnapshot,
+                    let goal = Goal(snapshot: snapshot) {
+                    
+                    newGoals.append(goal)
+                }
+                else{
+                    print(child)
+                    print("something went wrong")
+                }
+            }
+            self.products = newGoals
+            self.tableView.reloadData()
+            print(self.products.count)
+        }
+        
+        refObservers.append(goals)
+        
     }
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
-        
-        print("Hello")
-        
-        let goals = ref.child("Goals").observe(.value){ snapshot in
-            
-                print("Got data")
-                var newGoals: [Goal] = []
-                for child in snapshot.children {
-                    if
-                        let snapshot = child as? DataSnapshot,
-                        let goal = Goal(snapshot: snapshot) {
-                        print("Goals are being included")
-                        newGoals.append(goal)
-                    }
-                    else{
-                        print(snapshot.value as Any)
-                        print("something went wrong")
-                    }
-                }
-                self.products = newGoals
-                self.tableView.reloadData()
-            }
-        refObservers.append(goals)
-        
-        /*
-        database.child("product1").observe( .value, with:{snapshot in
-            guard let value = snapshot.value as? [String: Any] else{
-                return
-            }
-            print("Value: \(value)")
-        })
-        */
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -77,7 +69,7 @@ class GoalsViewController:
         cell.productLabel.text = goal.product //Ver como dar valor
         cell.donadosLabel.text = String(goal.progress)
         cell.objetivoLabel.text = String(goal.goal)
-        cell.progressBar.setProgress(Float((goal.progress / goal.goal)) , animated: true)
+        //cell.progressBar.setProgress(Float((goal.progress / goal.goal)) , animated: true)
         
         return cell
     }
@@ -105,7 +97,7 @@ class GoalsViewController:
                 object = [
                     "product": productText,
                     "progress": 0,
-                    "goal": goalText
+                    "goal": Int(goalText) as Any
                 ]
                 self.ref.child("Goals").childByAutoId().setValue(object)
             }
