@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class ProductCell:UITableViewCell{
+class ProductCell: UITableViewCell{
     
     @IBOutlet weak var productLabel: UILabel!
     

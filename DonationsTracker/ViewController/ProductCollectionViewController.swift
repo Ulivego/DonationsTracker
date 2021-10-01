@@ -21,7 +21,7 @@ class GoalsViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let goals = ref.child("Goals").observe(.value){ snapshot in
+        let goals = ref.child("Goals").queryOrdered(byChild: "progress").observe(.value){ snapshot in
             
             var newGoals: [Goal] = []
             for child in snapshot.children {
@@ -69,7 +69,7 @@ class GoalsViewController:
         cell.productLabel.text = goal.product //Ver como dar valor
         cell.donadosLabel.text = String(goal.progress)
         cell.objetivoLabel.text = String(goal.goal)
-        //cell.progressBar.setProgress(Float((goal.progress / goal.goal)) , animated: true)
+        cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
         
         return cell
     }
