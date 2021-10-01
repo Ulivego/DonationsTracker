@@ -11,6 +11,8 @@ import Firebase
 import FirebaseAuth
 
 class SignUpViewController: UIViewController {
+    
+    let ref = Database.database().reference()  //Global Variable
 
     @IBOutlet weak var nombreTF: UITextField!
     @IBOutlet weak var apellidoTF: UITextField!
@@ -36,15 +38,29 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        Auth.auth().createUser(withEmail: email, password: password){_, error in
+        /*Auth.auth().createUser(withEmail: email, password: password){_, error in
             if error == nil{
                 Auth.auth().signIn(withEmail: email, password: password)
             }
             else{
                 print("Error in create User: \(error?.localizedDescription ?? "Undefined")")
             }
-        }
+        }*/
+        
+        /*Auth.auth().createUser(withEmail: correoTF.text!, password: passwordTF.text!, completion: { user, error in
+            if let error = error {
+                print("Error in create User")
+            } else {
+                ref.child("UserProfile").child(user?.user.email).setValue([
+                            "name" : nombreTF.text!,
+                            "lastName" : apellidoTF.text!,
+                            "birthDate" : birthDatePicker.date
+                            ])
+             }
+          })
+        }*/
     }
+    
     
     @objc func keyboardDismiss() {
         view.endEditing(true)
