@@ -67,6 +67,22 @@ class EconomicDonationsViewController: UIViewController {
         ]
         
         database.child("Payments").childByAutoId().setValue(payment)
+        
+        let alert = UIAlertController(
+            title: "¡Gracias!",
+            message: "Donación Exitosa",
+            preferredStyle: .alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default))
+        self.present(alert, animated: true, completion: nil)
+        
+        cardNumber.text = ""
+        ownerName.text = ""
+        monthCard.text = ""
+        yearCard.text = ""
+        cvNumber.text = ""
+        donationAmount.text = ""
     }
     
     @objc func keyboardDismiss() {

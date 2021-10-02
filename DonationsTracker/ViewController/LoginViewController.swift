@@ -50,6 +50,7 @@ class LoginViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
         handle = Auth.auth().addStateDidChangeListener{ _, user in
             if user != nil{
+                print(user)
                 self.performSegue(withIdentifier: self.loginToList, sender: nil)
                 self.correoTF.text = nil
                 self.passwordTF.text = nil
@@ -80,15 +81,15 @@ class LoginViewController: UIViewController {
         // Start login
         Auth.auth().signIn(withEmail: email, password: password){
             user, error in
-            print(user)
+            
             if let error = error, user == nil{
                 let alert = UIAlertController(
-                    title: "Sign in failed",
+                    title: "Error de Autenticación",
                     message: error.localizedDescription,
                     preferredStyle: .alert
                 )
                 
-                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                alert.addAction(UIAlertAction(title: "Cerrar", style: .default))
                 self.present(alert, animated: true, completion: nil)
             }
         }

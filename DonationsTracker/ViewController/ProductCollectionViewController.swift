@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
 
 class GoalsViewController:
     UITableViewController {
@@ -32,13 +32,13 @@ class GoalsViewController:
                     newGoals.append(goal)
                 }
                 else{
-                    print(child)
+                
                     print("something went wrong")
                 }
             }
             self.products = newGoals
             self.tableView.reloadData()
-            print(self.products.count)
+
         }
         
         refObservers.append(goals)
@@ -111,25 +111,6 @@ class GoalsViewController:
     
     
     
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let item = sender as? UICollectionViewCell
-        let indexPath = bookCollection.indexPath(for: item!)
-        let detailVC = segue.destination as! DetailViewController
-        
-        detailVC.detailName = bookNames[(indexPath?.row)!]
-    }
-     */
-       
-       //Ahorita esto no
-       /*
-       override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
-           
-           ref.observe(.value, with: {snapshot in
-               print(snapshot.value as Any)
-           })
-       }
-       */
+    
     
 }
