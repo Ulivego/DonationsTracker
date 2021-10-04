@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
-class ProductCollectionViewCell:UICollectionViewCell{
+class ProductCell: UITableViewCell{
     
     @IBOutlet weak var productLabel: UILabel!
     

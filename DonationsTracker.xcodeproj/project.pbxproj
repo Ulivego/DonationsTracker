@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		82107B1C26EBF3BD00FC5073 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82107B1B26EBF3BD00FC5073 /* PreferenceViewController.swift */; };
+		A1098345270628AF00494B91 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1098344270628AF00494B91 /* Goals.swift */; };
+		A154A5672705336600E5D440 /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154A5662705336600E5D440 /* ProductCollectionViewController.swift */; };
 		A1C7B8D226DD1D700091BED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */; };
 		A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */; };
 		A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7B8D526DD1D700091BED0 /* LoginViewController.swift */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		82107B1B26EBF3BD00FC5073 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		A1098344270628AF00494B91 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		A154A5662705336600E5D440 /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
 		A1C7B8CE26DD1D700091BED0 /* DonationsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonationsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7B8D126DD1D700091BED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C7B8D326DD1D700091BED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				A1DC302626E8EE2100AD7367 /* User.swift */,
 				A1DC302826E8EE6F00AD7367 /* EarnedBadges.swift */,
 				A1DC302A26E8EEA300AD7367 /* Badge.swift */,
+				A1098344270628AF00494B91 /* Goals.swift */,
 				A1DC302E26E8EEE400AD7367 /* Donations.swift */,
 				FCFCD52826EAB28D005959F4 /* UserAuth.swift */,
 			);
@@ -203,6 +208,7 @@
 				FC73F6A926DFC9DC00337E29 /* EconomicDonationsViewController.swift */,
 				FCEBFD1126E7A4E6003D1059 /* HomeViewController.swift */,
 				B4F0DD0E26EA777C008543EB /* ProductCollectionViewCell.swift */,
+				A154A5662705336600E5D440 /* ProductCollectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -360,6 +366,8 @@
 				FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */,
 				A1DC302F26E8EEE400AD7367 /* Donations.swift in Sources */,
 				A1C7B8D426DD1D700091BED0 /* SceneDelegate.swift in Sources */,
+				A154A5672705336600E5D440 /* ProductCollectionViewController.swift in Sources */,
+				A1098345270628AF00494B91 /* Goals.swift in Sources */,
 				A1DC302726E8EE2100AD7367 /* User.swift in Sources */,
 				FC73F6AA26DFC9DC00337E29 /* EconomicDonationsViewController.swift in Sources */,
 				FCFCD52926EAB28D005959F4 /* UserAuth.swift in Sources */,
