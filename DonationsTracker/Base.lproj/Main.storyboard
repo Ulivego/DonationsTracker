@@ -980,9 +980,6 @@
             <size key="intrinsicContentSize" width="222" height="42"/>
         </designable>
     </designables>
-    <inferredMetricsTieBreakers>
-        <segue reference="Eia-C5-h0k"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Donations" width="376" height="360"/>
         <image name="Logo_BAG_manzana" width="508" height="565"/>
