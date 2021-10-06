@@ -27,9 +27,8 @@ class SignUpViewController: UIViewController {
         
         view.addGestureRecognizer(tap)
     }
-    
-    
-    @IBAction func registerButton(_ sender: Any) {
+
+    @IBAction func registerBtn(_ sender: AnyObject) {
         guard
             let email = correoTF.text,
             let password = passwordTF.text,
@@ -39,28 +38,29 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        Auth.auth().createUser(withEmail: email, password: password){authResult, error in
+        /*Auth.auth().createUser(withEmail: email, password: password){_, error in
             if error == nil{
-                print(authResult)
-                let ref = Database.database().reference()
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "YY/MM/dd"
-                ref.child("UserProfile").child(authResult!.user.uid).setValue([
-                    "name" : self.nombreTF.text!,
-                    "lastName" : self.apellidoTF.text!,
-                    "birthDate" : dateFormatter.string(from: self.birthDatePicker.date)
-                            ])
-                print("Registrado")
-                self.correoTF.text = ""
-                self.passwordTF.text = ""
-                self.nombreTF.text = ""
-                self.apellidoTF.text = ""
+                Auth.auth().signIn(withEmail: email, password: password)
             }
             else{
                 print("Error in create User: \(error?.localizedDescription ?? "Undefined")")
             }
-        }
+        }*/
+        
+        /*Auth.auth().createUser(withEmail: correoTF.text!, password: passwordTF.text!, completion: { user, error in
+            if let error = error {
+                print("Error in create User")
+            } else {
+                ref.child("UserProfile").child(user?.user.email).setValue([
+                            "name" : nombreTF.text!,
+                            "lastName" : apellidoTF.text!,
+                            "birthDate" : birthDatePicker.date
+                            ])
+             }
+          })
+        }*/
     }
+    
     
     @objc func keyboardDismiss() {
         view.endEditing(true)
