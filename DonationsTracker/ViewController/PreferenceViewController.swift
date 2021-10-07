@@ -7,13 +7,32 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class PreferenceViewController: UIViewController {
 
+    @IBOutlet weak var nameNewTF: UITextField!
+    @IBOutlet weak var apellidoNewTF: UITextField!
+    @IBOutlet weak var mailNewTF: UITextField!
+    @IBOutlet weak var passwordNewTF: UITextField!
+    @IBOutlet weak var dateNewTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func updateBtn(_ sender: Any) {
+    }
+    
+    @IBAction func signoutBtn(_ sender: Any) {
+        try! Auth.auth().signOut()
 
+        if let storyboard = self.storyboard {
+                    let vc = storyboard.instantiateViewController(withIdentifier: "LoginView") as! UINavigationController
+                    self.present(vc, animated: false, completion: nil)
+                }
+    }
+    
 }
