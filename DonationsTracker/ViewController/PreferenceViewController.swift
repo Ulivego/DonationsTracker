@@ -28,11 +28,7 @@ class PreferenceViewController: UIViewController {
     
     @IBAction func signoutBtn(_ sender: Any) {
         try! Auth.auth().signOut()
-
-        if let storyboard = self.storyboard {
-                    let vc = storyboard.instantiateViewController(withIdentifier: "LoginView") as! UINavigationController
-                    self.present(vc, animated: false, completion: nil)
-                }
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 }
