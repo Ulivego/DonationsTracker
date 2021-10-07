@@ -50,7 +50,6 @@ class LoginViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
         handle = Auth.auth().addStateDidChangeListener{ _, user in
             if user != nil{
-                print(user)
                 self.performSegue(withIdentifier: self.loginToList, sender: nil)
                 self.correoTF.text = nil
                 self.passwordTF.text = nil
@@ -98,6 +97,7 @@ class LoginViewController: UIViewController {
     @objc func keyboardDismiss() {
         view.endEditing(true)
     }
+    
 }
 
 extension LoginViewController: UITextFieldDelegate{

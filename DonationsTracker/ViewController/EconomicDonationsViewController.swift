@@ -58,8 +58,10 @@ class EconomicDonationsViewController: UIViewController {
         }
         
         let database = Database.database().reference()
+        let user = Auth.auth().currentUser
         
         let payment: [String: Any] = [
+            "userId": user?.email as Any,
             "cardNumber": cardNumberText,
             "ownerName": ownerNameText,
             "expireDate": expireMonthText + "/" + expireYearText,

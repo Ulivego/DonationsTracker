@@ -9,12 +9,13 @@
 import UIKit
 import Firebase
 
-class GoalsViewController:
-    UITableViewController {
+class GoalsViewController: UITableViewController {
     
     var products: [Goal] = []
     
     private let ref = Database.database().reference()
+    
+    private let user = Auth.auth().currentUser;
     
     private var refObservers: [DatabaseHandle] = []
     
@@ -47,7 +48,6 @@ class GoalsViewController:
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
-
     }
     
     override func viewDidDisappear(_ animated: Bool) {
