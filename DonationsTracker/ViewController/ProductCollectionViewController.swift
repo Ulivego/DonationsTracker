@@ -67,8 +67,8 @@ class GoalsViewController: UITableViewController {
         let goal = products[indexPath.row]
         
         cell.productLabel.text = goal.product //Ver como dar valor
-        cell.donadosLabel.text = String(goal.progress)
-        cell.objetivoLabel.text = String(goal.goal)
+        cell.donadosLabel.text = String(goal.progress) + " kg"
+        cell.objetivoLabel.text = String(goal.goal) + " kg"
         cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
         
         return cell
@@ -117,9 +117,10 @@ class GoalsViewController: UITableViewController {
         if editingStyle == .delete {
             tableView.beginUpdates()
             
-            let toDelete = self.ref.child("Goals").child(products[indexPath.row])
-            ref.removeValue { error, _ in
-                print(error.localizedDescription)
+            //Not sure tbh
+            let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
+            toDelete.removeValue { error, _ in
+                print(error?.localizedDescription as Any)
             }
                 
             products.remove(at: indexPath.row)
