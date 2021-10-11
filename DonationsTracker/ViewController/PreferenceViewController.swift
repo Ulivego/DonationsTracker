@@ -58,17 +58,53 @@ class PreferenceViewController: UIViewController {
         let childUpdates = ["/UserProfile/\(key)": data]
         ref.updateChildValues(childUpdates)
         
+        var flag = true
         Auth.auth().currentUser?.updateEmail(to: mailNewTF.text!) { error in
-          print(error)
+            if error != nil {
+                let alert = UIAlertController(
+                    title: "Error en correo y contraseña",
+                    message: "Cierre sesion e inicie una nueva sesion",
+                    preferredStyle: .alert
+                )
+                
+                alert.addAction(UIAlertAction(title: "Cerrar", style: .default))
+                self.present(alert, animated: true, completion: nil)
+                flag = false
+            }
         }
         
-        if (Int(passwordNewTF.text!.count) >= 6){
-            Auth.auth().currentUser?.updatePassword(to: passwordNewTF.text!) { error in
-              print(error)
-            }
-        } else {
-            print("Requiere minimo 6 caracteres")
+        if flag == false {
+            return
         }
+        
+        if (Int(passwordNewTF.text!.count) > 0){
+            Auth.auth().currentUser?.updatePassword(to: passwordNewTF.text!) { error in
+                if error != nil {
+                    let alert = UIAlertController(
+                        title: "Error en contraseña",
+                        message: "Requiere minimo 6 caracteres",
+                        preferredStyle: .alert
+                    )
+                    
+                    alert.addAction(UIAlertAction(title: "Cerrar", style: .default))
+                    self.present(alert, animated: true, completion: nil)
+                    flag = false
+                }
+            }
+        } 
+        
+        if flag == false {
+            return
+        }
+        
+        let alert = UIAlertController(
+            title: "Actualizado",
+            message: "Se guardo exitosamente",
+            preferredStyle: .alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "Cerrar", style: .default))
+        self.present(alert, animated: true, completion: nil)
         
     }
     
