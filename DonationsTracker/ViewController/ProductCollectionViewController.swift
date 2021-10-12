@@ -105,9 +105,9 @@ class GoalsViewController: UITableViewController {
                 if(goalText != "" || productText != ""){
                     self.ref.child("Goals").childByAutoId().setValue(object)
                 }
+            }
                
         }))
-           
         
            
         self.present(alert, animated: true, completion: nil)
