@@ -40,8 +40,6 @@ class MakeDonationsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
 
