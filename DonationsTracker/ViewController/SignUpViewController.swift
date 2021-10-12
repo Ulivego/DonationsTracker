@@ -41,7 +41,7 @@ class SignUpViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: email, password: password){authResult, error in
             if error == nil{
-                print(authResult)
+            
                 let ref = Database.database().reference()
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "YY/MM/dd"
