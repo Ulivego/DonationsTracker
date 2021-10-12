@@ -70,8 +70,10 @@ class GoalsViewController: UITableViewController {
         cell.donadosLabel.text = String(goal.progress) + " kg"
         cell.objetivoLabel.text = String(goal.goal) + " kg"
         cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
-        cell.progressBar.transform = masteryProgress.transform.scaledBy(x: 1, y: 20)
-        
+        if cell.progressBar.bounds.height == 0{
+            cell.progressBar.transform = cell.progressBar.transform.scaledBy(x: 1, y: 4)        }
+        print(cell.progressBar.bounds.size)
+    
         return cell
     }
     
@@ -90,7 +92,7 @@ class GoalsViewController: UITableViewController {
         
         alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { [weak alert] (_) in
             if
-                let textFieldProduct = alert?.textFields? [0],
+                let textFieldProduct = alert?.textFields?[0],
                 let productText = textFieldProduct.text,
                 let textFieldGoal = alert?.textFields?[1],
                 let goalText = textFieldGoal.text {
@@ -100,8 +102,9 @@ class GoalsViewController: UITableViewController {
                     "progress": 0,
                     "goal": Int(goalText) as Any
                 ]
-                self.ref.child("Goals").childByAutoId().setValue(object)
-            }
+                if(goalText != "" || productText != ""){
+                    self.ref.child("Goals").childByAutoId().setValue(object)
+                }
                
         }))
            
