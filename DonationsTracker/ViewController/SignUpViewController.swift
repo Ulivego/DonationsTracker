@@ -49,7 +49,15 @@ class SignUpViewController: UIViewController {
                     "name" : self.nombreTF.text!,
                     "lastName" : self.apellidoTF.text!,
                     "birthDate" : dateFormatter.string(from: self.birthDatePicker.date),
-                    "userType" : self.userType
+                    "userType" : self.userType,
+                    "dononations": 0,
+                    "families": 0,
+                    "level": "Plátano",
+                    "logros": [
+                        "Logro1": false,
+                        "Logro2": false,
+                        "Logro3": false
+                                ]
                             ])
                 print("Registrado")
                 self.correoTF.text = ""
