@@ -70,6 +70,7 @@ class GoalsViewController: UITableViewController {
         cell.donadosLabel.text = String(goal.progress) + " kg"
         cell.objetivoLabel.text = String(goal.goal) + " kg"
         cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
+        cell.progressBar.transform = masteryProgress.transform.scaledBy(x: 1, y: 20)
         
         return cell
     }
@@ -117,7 +118,6 @@ class GoalsViewController: UITableViewController {
         if editingStyle == .delete {
             tableView.beginUpdates()
             
-            //Not sure tbh
             let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
             toDelete.removeValue { error, _ in
                 print(error?.localizedDescription as Any)
@@ -127,6 +127,13 @@ class GoalsViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
                 
             tableView.endUpdates()
+        }
+    }
+    
+    //Testing function to sort the goals
+    func sortItemsByProgress(_ products: [Goal]) -> [Goal] {
+        products.sorted {itemA, itemB in
+            itemA.progress / itemA.goal < itemB.progress / itemB.goal
         }
     }
 }
