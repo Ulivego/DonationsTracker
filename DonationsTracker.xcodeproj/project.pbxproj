@@ -24,6 +24,7 @@
 		A1DC302F26E8EEE400AD7367 /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC302E26E8EEE400AD7367 /* Donations.swift */; };
 		B4F0DD0F26EA777C008543EB /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0DD0E26EA777C008543EB /* ProductCollectionViewCell.swift */; };
 		B4F2E43D26DFD99400BE29D5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */; };
+		B94CDC2A2716358A007D82DF /* MetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94CDC292716358A007D82DF /* MetaViewController.swift */; };
 		FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F69626DFC96200337E29 /* SignUpViewController.swift */; };
 		FC73F6A526DFC9CC00337E29 /* MakeDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */; };
 		FC73F6AA26DFC9DC00337E29 /* EconomicDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73F6A926DFC9DC00337E29 /* EconomicDonationsViewController.swift */; };
@@ -76,6 +77,7 @@
 		A1DC302E26E8EEE400AD7367 /* Donations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donations.swift; sourceTree = "<group>"; };
 		B4F0DD0E26EA777C008543EB /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4F2E43C26DFD99400BE29D5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		B94CDC292716358A007D82DF /* MetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaViewController.swift; sourceTree = "<group>"; };
 		FC73F69626DFC96200337E29 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FC73F6A426DFC9CC00337E29 /* MakeDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationsViewController.swift; sourceTree = "<group>"; };
 		FC73F6A926DFC9DC00337E29 /* EconomicDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomicDonationsViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				FC73F6A926DFC9DC00337E29 /* EconomicDonationsViewController.swift */,
 				B4F0DD0E26EA777C008543EB /* ProductCollectionViewCell.swift */,
 				A154A5662705336600E5D440 /* ProductCollectionViewController.swift */,
+				B94CDC292716358A007D82DF /* MetaViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82107B1C26EBF3BD00FC5073 /* PreferenceViewController.swift in Sources */,
+				B94CDC2A2716358A007D82DF /* MetaViewController.swift in Sources */,
 				A1C7B8D626DD1D700091BED0 /* LoginViewController.swift in Sources */,
 				FC73F69726DFC96200337E29 /* SignUpViewController.swift in Sources */,
 				B4F0DD0F26EA777C008543EB /* ProductCollectionViewCell.swift in Sources */,
