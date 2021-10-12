@@ -21,10 +21,10 @@ struct User{
         print(snapshot)
         guard let value = snapshot.value as? NSDictionary,
             //let name = value["name"] as? String,
-            let lastName = value["lastName"] as? String,
-            let level = value["level"] as? String,
-            let total = value["donations"] as? Int,
-            let families = value["families"] as? Int
+            let lastName: String? = value["lastName"] as? String ?? "1",
+            let level: String? = value["level"] as? String ?? "1",
+            let total: Int? = value["donations"] as? Int ?? 1,
+            let families: Int? = value["families"] as? Int ?? 1
             //let birthday = value["birthDate"] as? Date
             //let logros = value["logros"] as? [Bool]
         else {
