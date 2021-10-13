@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var correoTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var birthDatePicker: UIDatePicker!
+    let userType = "General"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,27 +39,36 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        /*Auth.auth().createUser(withEmail: email, password: password){_, error in
+        Auth.auth().createUser(withEmail: email, password: password){authResult, error in
             if error == nil{
-                Auth.auth().signIn(withEmail: email, password: password)
+            
+                let ref = Database.database().reference()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "YY/MM/dd"
+                ref.child("UserProfile").child(authResult!.user.uid).setValue([
+                    "name" : self.nombreTF.text!,
+                    "lastName" : self.apellidoTF.text!,
+                    "birthDate" : dateFormatter.string(from: self.birthDatePicker.date),
+                    "userType" : self.userType,
+                    "dononations": 0,
+                    "families": 0,
+                    "level": "Plátano",
+                    "logros": [
+                        "Logro1": false,
+                        "Logro2": false,
+                        "Logro3": false
+                                ]
+                            ])
+                print("Registrado")
+                self.correoTF.text = ""
+                self.passwordTF.text = ""
+                self.nombreTF.text = ""
+                self.apellidoTF.text = ""
             }
             else{
                 print("Error in create User: \(error?.localizedDescription ?? "Undefined")")
             }
-        }*/
-        
-        /*Auth.auth().createUser(withEmail: correoTF.text!, password: passwordTF.text!, completion: { user, error in
-            if let error = error {
-                print("Error in create User")
-            } else {
-                ref.child("UserProfile").child(user?.user.email).setValue([
-                            "name" : nombreTF.text!,
-                            "lastName" : apellidoTF.text!,
-                            "birthDate" : birthDatePicker.date
-                            ])
-             }
-          })
-        }*/
+        }
     }
     
     
