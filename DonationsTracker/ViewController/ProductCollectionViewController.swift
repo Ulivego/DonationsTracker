@@ -51,6 +51,8 @@ class GoalsViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
     
+    
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
         refObservers.forEach(ref.removeObserver(withHandle:))
