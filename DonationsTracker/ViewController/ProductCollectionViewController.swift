@@ -64,6 +64,8 @@ class GoalsViewController: UITableViewController {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "Item Cell", for: indexPath) as! ProductCell
         
+        self.Goals.sortInPlace({$0.progress/$0.goal < $1.progress/$1.goal})
+        
         let goal = products[indexPath.row]
         
         cell.productLabel.text = goal.product //Ver como dar valor
@@ -133,10 +135,12 @@ class GoalsViewController: UITableViewController {
         }
     }
     
-    //Testing function to sort the goals
+    //Testing function to sort the goals //Update: didn't work
+    /*
     func sortItemsByProgress(_ products: [Goal]) -> [Goal] {
         products.sorted {itemA, itemB in
             itemA.progress / itemA.goal < itemB.progress / itemB.goal
         }
     }
+    */
 }
