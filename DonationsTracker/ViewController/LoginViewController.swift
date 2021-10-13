@@ -60,6 +60,10 @@ class LoginViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         guard let handle = handle else{return }

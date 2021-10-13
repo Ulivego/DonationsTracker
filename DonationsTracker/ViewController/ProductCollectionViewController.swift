@@ -73,17 +73,24 @@ class GoalsViewController: UITableViewController {
         cell.productLabel.text = goal.product //Ver como dar valor
         cell.donadosLabel.text = String(goal.progress) + " kg"
         cell.objetivoLabel.text = String(goal.goal) + " kg"
+        
+        // Agregar colores alternados a las barras
         if(indexPath.row % 2 == 0){
             cell.progressBar.progressTintColor = UIColor(red: 252/255, green: 161/255, blue: 47/255, alpha: 1)
         } else{
             cell.progressBar.progressTintColor = UIColor(red: 247/255, green: 0/255, blue: 56/255, alpha: 1)
         }
-        cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
-        if cell.progressBar.bounds.height == 0{
-            cell.progressBar.transform = cell.progressBar.transform.scaledBy(x: 1, y: 4)
-        }
-        print(cell.progressBar.bounds.size)
         
+        // Aumentar el tamaño de las barras
+        cell.progressBar.bounds.size = CGSize(width: cell.progressBar.bounds.width, height: 16)
+ 
+        // Formato redondeado
+        cell.progressBar.layer.cornerRadius = 8
+        
+        // Actualizar el progreso
+        cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
+        
+        // Si la meta es completada, es necesario borrar la vista de la meta
         if goal.progress >= goal.goal {
             let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
             toDelete.removeValue { error, _ in

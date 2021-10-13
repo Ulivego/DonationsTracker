@@ -110,7 +110,7 @@ class PreferenceViewController: UIViewController {
     
     @IBAction func signoutBtn(_ sender: Any) {
         try! Auth.auth().signOut()
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.navigationController?.popToRootViewController(animated: true)
     }
     
     @objc func keyboardDismiss() {
