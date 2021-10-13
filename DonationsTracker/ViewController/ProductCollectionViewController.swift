@@ -49,6 +49,8 @@ class GoalsViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
+        
+        navigationController?.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
@@ -108,19 +110,19 @@ class GoalsViewController: UITableViewController {
     
 
     @IBAction func tapAddProduct(_ sender: Any) {
-        let alert = UIAlertController(title: "Save product", message: "Guardar Producto", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Crear Meta", message: "Anota la información de la nueva meta", preferredStyle: .alert)
         
         alert.addTextField { (textField) in
-            textField.placeholder = "Enter the products name"
+            textField.placeholder = "Nombre del Producto"
             textField.autocapitalizationType = .words
         }
         alert.addTextField { (textField) in
-            textField.placeholder = "Enter the goal"
+            textField.placeholder = "Ingresa el Objetivo"
             textField.autocapitalizationType = .words
         }
            
         var object: [String: Any] = [:]
-        alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { [weak alert] (_) in
+        alert.addAction(UIAlertAction(title: "Guardar", style: .default, handler: { [weak alert] (_) in
             if
                 let textFieldProduct = alert?.textFields?[0],
                 let productText = textFieldProduct.text,

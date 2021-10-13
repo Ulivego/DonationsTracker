@@ -19,7 +19,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var correoTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var birthDatePicker: UIDatePicker!
+    
     let userType = "General"
+    let avisoPage = "https://bdalimentos.org/aviso/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +31,15 @@ class SignUpViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
         
         view.addGestureRecognizer(tap)
+        
     }
-
+    
+    @IBAction func OpenAviso(_ sender: Any) {
+        if let url = URL(string: avisoPage) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     @IBAction func registerBtn(_ sender: AnyObject) {
         guard
             let email = correoTF.text,
@@ -61,7 +70,7 @@ class SignUpViewController: UIViewController {
                         "Logro3": false
                                 ]
                             ])
-                print("Registrado")
+                
                 self.correoTF.text = ""
                 self.passwordTF.text = ""
                 self.nombreTF.text = ""
