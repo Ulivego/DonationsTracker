@@ -101,11 +101,16 @@ class GoalsViewController: UITableViewController {
     @IBAction func tapAddProduct(_ sender: Any) {
         let alert = UIAlertController(title: "Save product", message: "Guardar Producto", preferredStyle: .alert)
         
-        alert.addTextField { (textField) in textField.placeholder = "Enter the products name"}
-        alert.addTextField { (textField) in textField.placeholder = "Enter the goal"}
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter the products name"
+            textField.autocapitalizationType = .words
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter the goal"
+            textField.autocapitalizationType = .words
+        }
            
         var object: [String: Any] = [:]
-        
         alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { [weak alert] (_) in
             if
                 let textFieldProduct = alert?.textFields?[0],
