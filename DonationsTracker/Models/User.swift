@@ -8,30 +8,36 @@
 
 import Firebase
 
-/*struct User{
-    let email: String
-    let firstName: String?
+struct User{
+    let name: String?
     let lastName: String?
-    let password: String?
-    let role: String?
-    let birthDate: Date?
+    let level: String?
+    let total: Int?
+    let families: Int?
+    let logros: [Bool]?
     
-    init(authData: Firebase.) {
-        email = authData.email ?? ""
-        firstName = authData.firstName?
-        lastName = authData.lastName?
-        password = authData.password?
-        role = authData.role?
-        birthDate = authData.birthDate?
-    }
-    
-    init(email: String, firstName: String, lastName: String, password: String, role:String, birthDate: Date) {
-        self.email = email
-        self.firstName = firstName
+    init?(snapshot: DataSnapshot) {
+
+        guard
+            let value = snapshot.value as? NSDictionary,
+            let name = value["name"] as? String,
+            let lastName = value["lastName"] as? String,
+            let level = value["level"] as? String,
+            let total = value["donations"] as? Int,
+            let families = value["families"] as? Int
+
+        else {
+
+            return nil
+        }
+        
+        self.name = name
         self.lastName = lastName
-        self.password = password
-        self.role = role
-        self.birthDate = birthDate
+        self.level = level
+        self.total = total
+        self.families = families
+        self.logros = []
     }
     
-}*/
+    
+}
