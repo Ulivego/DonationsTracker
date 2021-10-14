@@ -9,7 +9,7 @@
 import Firebase
 import UIKit
 
-class MetaViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MetaViewController: UIViewController {
     
     var userInfo: User?
     
