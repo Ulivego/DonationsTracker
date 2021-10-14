@@ -33,11 +33,14 @@ class LoginViewController: UIViewController {
         correoTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         correoTF.layer.cornerRadius = 8
         correoTF.layer.masksToBounds = true
+        correoTF.text = ""
         
         passwordTF.layer.borderWidth = 2
         passwordTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         passwordTF.layer.cornerRadius = 8
         passwordTF.layer.masksToBounds = true
+        passwordTF.isSecureTextEntry = true
+        passwordTF.text = ""
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
         

@@ -25,6 +25,31 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nombreTF.layer.borderWidth = 2
+        nombreTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        nombreTF.layer.cornerRadius = 8
+        nombreTF.layer.masksToBounds = true
+        nombreTF.text = ""
+        
+        apellidoTF.layer.borderWidth = 2
+        apellidoTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        apellidoTF.layer.cornerRadius = 8
+        apellidoTF.layer.masksToBounds = true
+        apellidoTF.text = ""
+        
+        correoTF.layer.borderWidth = 2
+        correoTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        correoTF.layer.cornerRadius = 8
+        correoTF.layer.masksToBounds = true
+        correoTF.text = ""
+        
+        passwordTF.layer.borderWidth = 2
+        passwordTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        passwordTF.layer.cornerRadius = 8
+        passwordTF.layer.masksToBounds = true
+        passwordTF.isSecureTextEntry = true
+        passwordTF.text = ""
 
         navigationController?.navigationBar.isHidden = false
         
