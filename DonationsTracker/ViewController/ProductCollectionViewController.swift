@@ -38,6 +38,7 @@ class GoalsViewController: UITableViewController {
                 }
             }
             self.products = newGoals
+            self.products.sort(by: self.sortProgress)
             self.tableView.reloadData()
 
         }
@@ -48,7 +49,11 @@ class GoalsViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
+        
+        navigationController?.navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
@@ -64,13 +69,38 @@ class GoalsViewController: UITableViewController {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "Item Cell", for: indexPath) as! ProductCell
         
+        
         let goal = products[indexPath.row]
         
         cell.productLabel.text = goal.product //Ver como dar valor
-        cell.donadosLabel.text = String(goal.progress)
-        cell.objetivoLabel.text = String(goal.goal)
+        cell.donadosLabel.text = String(goal.progress) + " kg"
+        cell.objetivoLabel.text = String(goal.goal) + " kg"
+        
+        // Agregar colores alternados a las barras
+        if(indexPath.row % 2 == 0){
+            cell.progressBar.progressTintColor = UIColor(red: 252/255, green: 161/255, blue: 47/255, alpha: 1)
+        } else{
+            cell.progressBar.progressTintColor = UIColor(red: 247/255, green: 0/255, blue: 56/255, alpha: 1)
+        }
+        
+        // Aumentar el tamaño de las barras
+        cell.progressBar.bounds.size = CGSize(width: cell.progressBar.bounds.width, height: 16)
+ 
+        // Formato redondeado
+        cell.progressBar.layer.cornerRadius = 8
+        
+        // Actualizar el progreso
         cell.progressBar.setProgress(Float(goal.progress) / Float(goal.goal) , animated: true)
         
+        // Si la meta es completada, es necesario borrar la vista de la meta
+        if goal.progress >= goal.goal {
+            let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
+            toDelete.removeValue { error, _ in
+                print(error?.localizedDescription as Any)
+            }
+            products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
         return cell
     }
     
@@ -80,16 +110,21 @@ class GoalsViewController: UITableViewController {
     
 
     @IBAction func tapAddProduct(_ sender: Any) {
-        let alert = UIAlertController(title: "Save product", message: "Guardar Producto", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Crear Meta", message: "Anota la información de la nueva meta", preferredStyle: .alert)
         
-        alert.addTextField { (textField) in textField.placeholder = "Enter the products name"}
-        alert.addTextField { (textField) in textField.placeholder = "Enter the goal"}
+        alert.addTextField { (textField) in
+            textField.placeholder = "Nombre del Producto"
+            textField.autocapitalizationType = .words
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Ingresa el Objetivo"
+            textField.autocapitalizationType = .words
+        }
            
         var object: [String: Any] = [:]
-        
-        alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { [weak alert] (_) in
+        alert.addAction(UIAlertAction(title: "Guardar", style: .default, handler: { [weak alert] (_) in
             if
-                let textFieldProduct = alert?.textFields? [0],
+                let textFieldProduct = alert?.textFields?[0],
                 let productText = textFieldProduct.text,
                 let textFieldGoal = alert?.textFields?[1],
                 let goalText = textFieldGoal.text {
@@ -99,18 +134,45 @@ class GoalsViewController: UITableViewController {
                     "progress": 0,
                     "goal": Int(goalText) as Any
                 ]
-                self.ref.child("Goals").childByAutoId().setValue(object)
+                if(goalText != "" || productText != ""){
+                    self.ref.child("Goals").childByAutoId().setValue(object)
+                } else{
+                    let notCreated = UIAlertController(title: "Goal not created", message: "Product was empty so the goal wasn't created", preferredStyle: .alert)
+                    notCreated.addAction(UIAlertAction(title: "Ok", style: .default))
+                    self.present(notCreated, animated: true)
+                }
             }
                
         }))
-           
         
            
         self.present(alert, animated: true, completion: nil)
     }
     
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+            return .delete
+        }
+        
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            
+            let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
+            toDelete.removeValue { error, _ in
+                print(error?.localizedDescription as Any)
+            }
+                
+            products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+                
+            tableView.endUpdates()
+        }
+    }
     
-    
-    
+    func sortProgress(this: Goal, that: Goal) -> Bool {
+        let value1 = Float(this.progress) / Float(this.goal)
+        let value2 = Float(that.progress) / Float(that.goal)
+        return value1 < value2
+    }
     
 }

@@ -20,14 +20,26 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var birthDatePicker: UIDatePicker!
     
+    let userType = "General"
+    let avisoPage = "https://bdalimentos.org/aviso/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.navigationBar.isHidden = false
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
         
         view.addGestureRecognizer(tap)
+        
     }
-
+    
+    @IBAction func OpenAviso(_ sender: Any) {
+        if let url = URL(string: avisoPage) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     @IBAction func registerBtn(_ sender: AnyObject) {
         guard
             let email = correoTF.text,
@@ -38,27 +50,36 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        /*Auth.auth().createUser(withEmail: email, password: password){_, error in
+        Auth.auth().createUser(withEmail: email, password: password){authResult, error in
             if error == nil{
-                Auth.auth().signIn(withEmail: email, password: password)
+            
+                let ref = Database.database().reference()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "YY/MM/dd"
+                ref.child("UserProfile").child(authResult!.user.uid).setValue([
+                    "name" : self.nombreTF.text!,
+                    "lastName" : self.apellidoTF.text!,
+                    "birthDate" : dateFormatter.string(from: self.birthDatePicker.date),
+                    "userType" : self.userType,
+                    "dononations": 0,
+                    "families": 0,
+                    "level": "Plátano",
+                    "logros": [
+                        "Logro1": false,
+                        "Logro2": false,
+                        "Logro3": false
+                                ]
+                            ])
+                
+                self.correoTF.text = ""
+                self.passwordTF.text = ""
+                self.nombreTF.text = ""
+                self.apellidoTF.text = ""
             }
             else{
                 print("Error in create User: \(error?.localizedDescription ?? "Undefined")")
             }
-        }*/
-        
-        /*Auth.auth().createUser(withEmail: correoTF.text!, password: passwordTF.text!, completion: { user, error in
-            if let error = error {
-                print("Error in create User")
-            } else {
-                ref.child("UserProfile").child(user?.user.email).setValue([
-                            "name" : nombreTF.text!,
-                            "lastName" : apellidoTF.text!,
-                            "birthDate" : birthDatePicker.date
-                            ])
-             }
-          })
-        }*/
+        }
     }
     
     

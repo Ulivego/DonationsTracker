@@ -7,24 +7,10 @@
 //
 
 import UIKit
-import Firebase
 
 class MakeDonationsViewController: UIViewController {
 
-    private let database = Database.database().reference()
     let donationsPage = "https://bdalimentos.org/dona-en-especie/"
-    
-    
-    @IBAction func EconomicDonBtn(_ sender: Any) {
-        /*var value = 1
-        let object: [String: Any] = [
-            "name": "Economic Donation" as NSObject,
-            "id": value
-        ]
-        database.child("Other").childByAutoId().setValue(object)
-        value += 1*/
-        
-    }
     
     @IBAction func SpeciesDonBtn(_ sender: Any) {
         if let url = URL(string: donationsPage) {
@@ -40,8 +26,6 @@ class MakeDonationsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
 
