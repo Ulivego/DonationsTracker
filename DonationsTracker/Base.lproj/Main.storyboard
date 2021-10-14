@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -503,14 +502,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOb-dK-IiT">
-                                <rect key="frame" x="22" y="110" width="370" height="40.5"/>
-
+                                <rect key="frame" x="22" y="22" width="370" height="40.5"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHZ-GU-bos">
-                                <rect key="frame" x="22" y="194.5" width="89" height="23.5"/>
+                                <rect key="frame" x="22" y="106.5" width="89" height="23.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Donador">
                                         <attributes>
@@ -521,49 +519,44 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Experto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSU-fK-8jW">
-                                <rect key="frame" x="119" y="195" width="273" height="23"/>
-
+                                <rect key="frame" x="119" y="106.5" width="273" height="23"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCz-NW-zHA">
-
-                                <rect key="frame" x="22" y="261.5" width="370" height="23.5"/>
-
+                                <rect key="frame" x="22" y="173.5" width="370" height="23.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeP-HZ-MNH">
-                                <rect key="frame" x="22" y="307" width="370" height="23"/>
-
+                                <rect key="frame" x="22" y="219" width="370" height="23"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.59215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Familias Alimentadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-MZ-wEz">
-                                <rect key="frame" x="22" y="374" width="370" height="23.5"/>
+                                <rect key="frame" x="22" y="286" width="370" height="23.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Familias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hY-TI-ikm">
-                                <rect key="frame" x="22" y="419.5" width="370" height="23"/>
+                                <rect key="frame" x="22" y="331.5" width="370" height="23"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.59215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu0-B6-X7a">
-                                <rect key="frame" x="22" y="486.5" width="370" height="23.5"/>
+                                <rect key="frame" x="22" y="398.5" width="370" height="23.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-2j-4IG">
-                                <rect key="frame" x="11" y="521" width="392" height="281"/>
+                                <rect key="frame" x="11" y="433" width="392" height="232"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="3" id="9KD-zW-hEi">
                                     <size key="itemSize" width="120" height="150"/>
@@ -670,7 +663,6 @@
                             <constraint firstItem="IOb-dK-IiT" firstAttribute="top" secondItem="gmo-Qm-r84" secondAttribute="top" constant="22" id="zcN-vF-7gN"/>
                         </constraints>
                     </view>
-
                     <tabBarItem key="tabBarItem" title="Mis Donaciones" image="star.fill" catalog="system" selectedImage="star.fill" id="kk9-xt-SoO"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Mis Donaciones" id="zb3-z5-4dm">
@@ -686,6 +678,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="eatingFamiliesLbl" destination="eeP-HZ-MNH" id="kI7-1D-vIm"/>
+                        <outlet property="levelLlb" destination="PSU-fK-8jW" id="ufP-Vb-hSy"/>
+                        <outlet property="logrosCollection" destination="U0D-2j-4IG" id="WCF-xI-aUn"/>
+                        <outlet property="totalDonationLbl" destination="eeP-HZ-MNH" id="rld-OP-68g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRE-yA-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
