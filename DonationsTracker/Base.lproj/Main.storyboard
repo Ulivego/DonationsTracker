@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-YR-L5B">
-                                <rect key="frame" x="40" y="471" width="95" height="38.5"/>
+                                <rect key="frame" x="40" y="471" width="334" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,7 +34,7 @@
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-PX-f9g">
-                                <rect key="frame" x="40" y="590.5" width="95" height="38.5"/>
+                                <rect key="frame" x="40" y="590.5" width="334" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
-                                <rect key="frame" x="50" y="679" width="75" height="50"/>
+                                <rect key="frame" x="50" y="679" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
@@ -86,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-xn-AXx">
-                                <rect key="frame" x="12.5" y="210" width="150" height="146"/>
+                                <rect key="frame" x="132" y="210" width="150" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BsK-RT-2Mh"/>
                                     <constraint firstAttribute="height" constant="146" id="FTL-bc-bho"/>
@@ -544,46 +544,71 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-2j-4IG">
                                 <rect key="frame" x="11" y="521" width="392" height="281"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9KD-zW-hEi">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="3" id="9KD-zW-hEi">
+                                    <size key="itemSize" width="120" height="150"/>
+                                    <size key="estimatedItemSize" width="120" height="130"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" reuseIdentifier="LogroCell" id="ydp-sC-wCc" customClass="LogroViewCell" customModule="DonationsTracker" customModuleProvider="target">
-                                        <rect key="frame" x="76" y="0.0" width="240" height="148.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="07S-kc-MGk">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="148.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hLT-YK-Uob">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="35u-Kt-ms2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="148.5"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nlr-uM-Co1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSM-LM-3kM">
-                                                            <rect key="frame" x="0.0" y="128" width="240" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BAG_manzana" id="Nlr-uM-Co1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSM-LM-3kM">
+                                                    <rect key="frame" x="0.0" y="130" width="120" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="35u-Kt-ms2" secondAttribute="bottom" id="6Ti-Qv-3Mt"/>
-                                                <constraint firstItem="35u-Kt-ms2" firstAttribute="leading" secondItem="07S-kc-MGk" secondAttribute="leading" id="7G0-R1-Bxo"/>
-                                                <constraint firstItem="35u-Kt-ms2" firstAttribute="top" secondItem="07S-kc-MGk" secondAttribute="top" id="AIo-Ul-lXp"/>
-                                                <constraint firstAttribute="trailing" secondItem="35u-Kt-ms2" secondAttribute="trailing" id="plL-lY-Aoe"/>
+                                                <constraint firstItem="Nlr-uM-Co1" firstAttribute="leading" secondItem="hLT-YK-Uob" secondAttribute="leading" id="3SQ-v4-UbZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nlr-uM-Co1" secondAttribute="trailing" id="B92-vH-aUI"/>
+                                                <constraint firstItem="bSM-LM-3kM" firstAttribute="top" secondItem="Nlr-uM-Co1" secondAttribute="bottom" constant="10" id="TrT-Jz-FiR"/>
+                                                <constraint firstItem="Nlr-uM-Co1" firstAttribute="top" secondItem="hLT-YK-Uob" secondAttribute="top" id="aQu-UR-iQV"/>
+                                                <constraint firstItem="bSM-LM-3kM" firstAttribute="top" secondItem="hLT-YK-Uob" secondAttribute="top" constant="130" id="uTh-03-7dl"/>
+                                                <constraint firstAttribute="bottom" secondItem="bSM-LM-3kM" secondAttribute="bottom" id="yQU-fU-rfd"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <size key="customSize" width="120" height="150"/>
                                         <connections>
                                             <outlet property="LogroImage" destination="Nlr-uM-Co1" id="hvF-TI-hE2"/>
                                             <outlet property="Name" destination="bSM-LM-3kM" id="ESc-3k-LK5"/>
                                         </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JsO-BQ-Ob6">
+                                        <rect key="frame" x="136" y="0.0" width="120" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kcO-wO-wLO">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SS0-qw-jDw">
+                                        <rect key="frame" x="272" y="0.0" width="120" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Bf-oE-XOt">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ruu-zA-nqN">
+                                        <rect key="frame" x="0.0" y="160" width="120" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0yY-7L-UrH">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

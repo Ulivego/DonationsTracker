@@ -32,6 +32,7 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         ref.child("UserProfile").child(user!.uid).observe(.value){ snapshot in
             self.userInfo = User(snapshot: snapshot)
             
@@ -57,7 +58,8 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
             }
             
             self.logros = badges
-            //print(self.logros)
+            self.logrosCollection.reloadData()
+    
         }
         
         refObservers.append(logrosHandlers)
@@ -71,7 +73,7 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(logros.count)
+
         return logros.count
     }
     
@@ -79,10 +81,7 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! LogroViewCell
         
-        cell.LogroImage.image = UIImage(named: "Logo_BAG_manzana")
         cell.Name.text = logros[indexPath.row].name
-        
-        print(logros[indexPath.row])
         
         return cell
         

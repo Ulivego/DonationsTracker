@@ -32,8 +32,7 @@ struct Badge{
         self.description = description
         self.name = name
         self.requisit = requisit
-        
-        print(self.key)
+
     }
 
     func toAnyObject() -> Any{
