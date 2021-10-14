@@ -137,7 +137,7 @@ class GoalsViewController: UITableViewController {
                 if(goalText != "" || productText != ""){
                     self.ref.child("Goals").childByAutoId().setValue(object)
                 } else{
-                    let notCreated = UIAlertController(title: "Goal not created", message: "Product was empty so the goal wasn't created", preferredStyle: .alert)
+                    let notCreated = UIAlertController(title: "Acción Fallida", message: "Alguno de los campos estaba vacío. No se pudo crear la meta.", preferredStyle: .alert)
                     notCreated.addAction(UIAlertAction(title: "Ok", style: .default))
                     self.present(notCreated, animated: true)
                 }

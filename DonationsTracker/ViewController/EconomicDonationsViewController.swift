@@ -44,11 +44,11 @@ class EconomicDonationsViewController: UIViewController {
 
     @IBAction func makePayment(_ sender: Any) {
         guard
-            let cardNumberText = cardNumber.text,
-            let ownerNameText = ownerName.text,
-            let expireMonthText = monthCard.text,
-            let expireYearText = yearCard.text,
-            let cvNumberText = cvNumber.text,
+            let cardNumberText: String = cardNumber.text,
+            let ownerNameText: String = ownerName.text,
+            let expireMonthText: String = monthCard.text,
+            let expireYearText: String = yearCard.text,
+            let cvNumberText: String = cvNumber.text,
             let donationAmountText = donationAmount.text
         else {
             let alert = UIAlertController(title: "Información Incompleta", message: "Por favor llene correctamente la información", preferredStyle: .alert)
@@ -85,6 +85,8 @@ class EconomicDonationsViewController: UIViewController {
         yearCard.text = ""
         cvNumber.text = ""
         donationAmount.text = ""
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func keyboardDismiss() {
