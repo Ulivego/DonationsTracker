@@ -15,7 +15,7 @@ struct User{
     let total: Int?
     let families: Int?
     //let birthday : String?
-    //let logros: [Bool]?
+    let logros: [Bool]?
     
     init?(snapshot: DataSnapshot) {
         //print(snapshot)
@@ -28,18 +28,27 @@ struct User{
             let total = value["donations"] as? Int,
             let families = value["families"] as? Int
             //let birthday = value["birthDate"] as? String,
-            //let logros = value["logros"] as? [Bool]
         else {
+            print("F")
             return nil
         }
         
+        var newLogros:[String:  Any] = [:]
+        for child in value["logros"] as! [String: Any] {
+            if let logro = child as? DataSnapshot {
+                //newLogros = child
+                //print(value["logros"])
+            }
+        }
+        
+        //print (value["logros"])
         //self.name = name
         //self.lastName = lastName
         self.level = level
         self.total = total
         self.families = families
         //self.birthday = birthday
-        //self.logros = logros
+        self.logros = []
     }
     
     
