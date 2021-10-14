@@ -575,6 +575,10 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="odG-BX-9cz" id="0h4-Vw-2Lx"/>
+                                    <outlet property="delegate" destination="odG-BX-9cz" id="GsL-JG-TuM"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gmo-Qm-r84"/>

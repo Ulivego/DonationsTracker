@@ -9,7 +9,7 @@
 import Firebase
 import UIKit
 
-class MetaViewController: UIViewController {
+class MetaViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var userInfo: User?
     
@@ -23,13 +23,14 @@ class MetaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userSnapshot = ref.child("UserProfile").child(user!.uid).observe(.value){ snapshot in
+        ref.child("UserProfile").child(user!.uid).observe(.value){ snapshot in
             self.userInfo = User(snapshot: snapshot)
+            
+            self.levelLlb.text = self.userInfo?.level!
+            self.eatingFamiliesLbl.text = String((self.userInfo?.families)!)
+            self.totalDonationLbl.text = String("$ \((self.userInfo?.total)!)")
         }
-        //print(userInfo!)
-        levelLlb.text = userInfo?.level
-        eatingFamiliesLbl.text = "\(String(describing: userInfo?.families))"
-        totalDonationLbl.text = "\(String(describing: userInfo?.total))"
+        
         
     }
 }
