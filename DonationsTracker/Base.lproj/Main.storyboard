@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -43,13 +42,14 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64E-uM-AIe" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
                                 <rect key="frame" x="50" y="537.5" width="314" height="50"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="1" green="0.75691884760000006" blue="0.20725488659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GF8-Xh-fFT"/>
                                     <constraint firstAttribute="height" constant="50" id="agH-ha-hSF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="Log In">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Ingresar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -333,7 +333,7 @@
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxO-dg-8oU" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
                                 <rect key="frame" x="44" y="722" width="326" height="47"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="1" green="0.75691884760000006" blue="0.20725488659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Registrarse">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -709,7 +709,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnr-M8-wuJ" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
                                 <rect key="frame" x="74" y="602" width="266" height="42"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="1" green="0.75691884760000006" blue="0.20725488659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Mnj-UZ-0kR"/>
                                     <constraint firstAttribute="width" constant="266" id="rX4-bd-csw"/>
@@ -856,12 +856,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="EconomicDonBtn:" destination="JUQ-qm-KVS" eventType="touchUpInside" id="kkv-Qn-4Jn"/>
                                     <segue destination="wy8-Op-Oty" kind="presentation" identifier="makeDonationsToEconomic" id="7CQ-8Z-9sP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sólo productos de alimentación, limpieza del hogar e higiene." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr1-hv-HvP">
-                                <rect key="frame" x="50" y="609" width="314" height="33.5"/>
+                                <rect key="frame" x="50" y="622" width="314" height="4"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -873,9 +872,10 @@
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0J-Jg-wa6" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="S0J-Jg-wa6" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
                                 <rect key="frame" x="44" y="547" width="326" height="55"/>
-                                <color key="backgroundColor" red="0.9648702602" green="0.71724221749999995" blue="0.10463248059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="1" green="0.75691884760000006" blue="0.20725488659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Dona en Especie">
                                     <color key="titleColor" systemColor="darkTextColor"/>
@@ -896,11 +896,12 @@
                         <constraints>
                             <constraint firstItem="Nr1-hv-HvP" firstAttribute="leading" secondItem="b1t-gx-M4g" secondAttribute="leading" constant="50" id="1tC-U6-Gkt"/>
                             <constraint firstItem="gRg-bI-ZS2" firstAttribute="leading" secondItem="b1t-gx-M4g" secondAttribute="leading" constant="50" id="2n4-u8-TWd"/>
+                            <constraint firstItem="b1t-gx-M4g" firstAttribute="bottom" secondItem="Nr1-hv-HvP" secondAttribute="bottom" constant="50" id="GdK-Sh-2Un"/>
                             <constraint firstItem="gRg-bI-ZS2" firstAttribute="top" secondItem="vy2-mb-7f4" secondAttribute="bottom" constant="10" id="HFt-1W-pN6"/>
                             <constraint firstItem="b1t-gx-M4g" firstAttribute="trailing" secondItem="S0J-Jg-wa6" secondAttribute="trailing" constant="44" id="J9L-0B-YJY"/>
                             <constraint firstItem="b1t-gx-M4g" firstAttribute="trailing" secondItem="vy2-mb-7f4" secondAttribute="trailing" constant="22" id="L3u-ZK-Zje"/>
                             <constraint firstItem="vy2-mb-7f4" firstAttribute="leading" secondItem="b1t-gx-M4g" secondAttribute="leading" constant="22" id="TKt-p5-YHF"/>
-                            <constraint firstItem="r99-hu-v6S" firstAttribute="top" secondItem="gRg-bI-ZS2" secondAttribute="bottom" constant="35" id="YFb-XG-yKe"/>
+                            <constraint firstItem="r99-hu-v6S" firstAttribute="top" secondItem="gRg-bI-ZS2" secondAttribute="bottom" constant="25" id="YFb-XG-yKe"/>
                             <constraint firstItem="r99-hu-v6S" firstAttribute="leading" secondItem="b1t-gx-M4g" secondAttribute="leading" constant="44" id="Z03-27-qE9"/>
                             <constraint firstItem="S0J-Jg-wa6" firstAttribute="top" secondItem="r99-hu-v6S" secondAttribute="bottom" constant="30" id="ZmU-5i-JEx"/>
                             <constraint firstItem="b1t-gx-M4g" firstAttribute="trailing" secondItem="gRg-bI-ZS2" secondAttribute="trailing" constant="50" id="cIe-FY-qKn"/>
@@ -1091,7 +1092,7 @@
     </scenes>
     <designables>
         <designable name="64E-uM-AIe">
-            <size key="intrinsicContentSize" width="75" height="47"/>
+            <size key="intrinsicContentSize" width="98" height="47"/>
         </designable>
         <designable name="6vx-9k-cQf">
             <size key="intrinsicContentSize" width="145" height="42"/>
@@ -1113,7 +1114,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="cUH-Ut-lsO"/>
+        <segue reference="1Rf-Uc-tI2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Donations" width="376" height="360"/>
@@ -1122,9 +1123,6 @@
         <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <namedColor name="AccentColor">
-            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

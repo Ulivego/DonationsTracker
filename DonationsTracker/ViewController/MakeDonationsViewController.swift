@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import Firebase
 
 class MakeDonationsViewController: UIViewController {
 
-    private let database = Database.database().reference()
     let donationsPage = "https://bdalimentos.org/dona-en-especie/"
     
     @IBAction func SpeciesDonBtn(_ sender: Any) {
