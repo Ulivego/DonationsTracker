@@ -24,11 +24,16 @@ struct User{
             let lastName = value["lastName"] as? String,
             let level = value["level"] as? String,
             let total = value["donations"] as? Int,
-            let families = value["families"] as? Int
+            let families = value["families"] as? Int,
+            let logros = value["logros"] as? [String: Bool]
 
         else {
 
             return nil
+        }
+        
+        let earned = logros.map { (key: String, value: Bool) -> Bool in
+            return value
         }
         
         self.name = name
@@ -36,7 +41,7 @@ struct User{
         self.level = level
         self.total = total
         self.families = families
-        self.logros = []
+        self.logros = earned
     }
     
     

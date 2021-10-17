@@ -38,6 +38,8 @@ class EconomicDonationsViewController: UIViewController {
         yearCard.delegate = self
         cvNumber.delegate = self
         donationAmount.delegate = self
+        
+        self.tabBarController?.hidesBottomBarWhenPushed = true
     }
     
     

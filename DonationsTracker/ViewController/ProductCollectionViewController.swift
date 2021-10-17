@@ -82,6 +82,7 @@ class GoalsViewController: UITableViewController {
         } else{
             cell.progressBar.progressTintColor = UIColor(red: 247/255, green: 0/255, blue: 56/255, alpha: 1)
         }
+        cell.progressBar.trackTintColor = UIColor.white.withAlphaComponent(0.1)
         
         // Aumentar el tamaño de las barras
         cell.progressBar.bounds.size = CGSize(width: cell.progressBar.bounds.width, height: 16)
@@ -138,7 +139,7 @@ class GoalsViewController: UITableViewController {
                     self.ref.child("Goals").childByAutoId().setValue(object)
                 } else{
                     let notCreated = UIAlertController(title: "Acción Fallida", message: "Alguno de los campos estaba vacío. No se pudo crear la meta.", preferredStyle: .alert)
-                    notCreated.addAction(UIAlertAction(title: "Ok", style: .default))
+                    notCreated.addAction(UIAlertAction(title: "Cerrar", style: .default))
                     self.present(notCreated, animated: true)
                 }
             }

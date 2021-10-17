@@ -82,8 +82,27 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! LogroViewCell
         
         cell.Name.text = logros[indexPath.row].name
+        cell.Name.textAlignment = .center
+        
+        if(userInfo?.logros?[indexPath.row] == false) {
+            cell.LogroImage.tintColor = UIColor.gray
+        }
         
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let logro = logros[indexPath.row]
+        
+        let logroDescriptionAlert = UIAlertController(title: logro.name, message: logro.description, preferredStyle: .alert)
+        
+        if(userInfo?.logros?[indexPath.row] == false) {
+            logroDescriptionAlert.message = "Requisito: \(logro.requisit)"
+        }
+        logroDescriptionAlert.addAction(UIAlertAction(title: "Cerrar", style: .default))
+        
+        self.present(logroDescriptionAlert, animated: true, completion: nil)
     }
 }
