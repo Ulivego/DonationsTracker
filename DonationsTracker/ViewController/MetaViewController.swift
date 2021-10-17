@@ -85,7 +85,10 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.Name.textAlignment = .center
         
         if(userInfo?.logros?[indexPath.row] == false) {
+            cell.LogroImage.image = UIImage(named: "Logo_BAG_manzana")?.withRenderingMode(.alwaysTemplate)
             cell.LogroImage.tintColor = UIColor.gray
+        } else {
+            cell.LogroImage.image = UIImage(named: "Logo_BAG_manzana")
         }
         
         return cell
