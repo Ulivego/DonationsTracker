@@ -29,33 +29,33 @@ class PreferenceViewController: UIViewController {
         let user = Auth.auth().currentUser
         let userID = user?.uid
         
-        nameNewTF.layer.borderWidth = 2
+        nameNewTF.layer.borderWidth = 1
         nameNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         nameNewTF.layer.cornerRadius = 8
         nameNewTF.layer.masksToBounds = true
         
-        apellidoNewTF.layer.borderWidth = 2
+        apellidoNewTF.layer.borderWidth = 1
         apellidoNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         apellidoNewTF.layer.cornerRadius = 8
         apellidoNewTF.layer.masksToBounds = true
         
-        mailNewTF.layer.borderWidth = 2
+        mailNewTF.layer.borderWidth = 1
         mailNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         mailNewTF.layer.cornerRadius = 8
         mailNewTF.layer.masksToBounds = true
         
-        passwordNewTF.layer.borderWidth = 2
+        passwordNewTF.layer.borderWidth = 1
         passwordNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         passwordNewTF.layer.cornerRadius = 8
         passwordNewTF.layer.masksToBounds = true
         passwordNewTF.isSecureTextEntry = true
         
-        dateNewTF.layer.borderWidth = 2
+        dateNewTF.layer.borderWidth = 1
         dateNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         dateNewTF.layer.cornerRadius = 8
         dateNewTF.layer.masksToBounds = true
         
-        nameNewTF.layer.borderWidth = 2
+        nameNewTF.layer.borderWidth = 1
         nameNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         nameNewTF.layer.cornerRadius = 8
         nameNewTF.layer.masksToBounds = true
@@ -95,6 +95,7 @@ class PreferenceViewController: UIViewController {
                         "name": self.nameNewTF.text,
                         "donations": userInfo?.total,
                         "families": userInfo?.families,
+                        "userType" : userInfo?.userType,
                         "level": userInfo?.level,
                         "logros": userInfo?.logros] as [String : Any]
             

@@ -45,6 +45,17 @@ class GoalsViewController: UITableViewController {
         
         refObservers.append(goals)
         
+        var userInfo: User?
+        ref.child("UserProfile").child(user!.uid).observe(.value){ snapshot in
+            
+            userInfo = User(snapshot: snapshot)
+            
+            if userInfo?.userType != "Admin" {
+                self.navigationItem.rightBarButtonItems?[1].isEnabled = false
+                self.navigationItem.rightBarButtonItems?[1].tintColor = UIColor.white
+            }
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool){

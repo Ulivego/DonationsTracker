@@ -13,6 +13,7 @@ struct User{
     let lastName: String?
     let level: String?
     let total: Int?
+    let userType: String?
     let families: Int?
     let logros: [Bool]?
     
@@ -25,6 +26,7 @@ struct User{
             let level = value["level"] as? String,
             let total = value["donations"] as? Int,
             let families = value["families"] as? Int,
+            let userType = value["userType"] as? String,
             let logros = value["logros"] as? [String: Bool]
 
         else {
@@ -42,6 +44,7 @@ struct User{
         self.total = total
         self.families = families
         self.logros = earned
+        self.userType = userType
     }
     
     

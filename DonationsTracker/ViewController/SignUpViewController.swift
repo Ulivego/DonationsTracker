@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController {
     
     let ref = Database.database().reference()  //Global Variable
 
+    // Texfields
     @IBOutlet weak var nombreTF: UITextField!
     @IBOutlet weak var apellidoTF: UITextField!
     @IBOutlet weak var correoTF: UITextField!
@@ -21,30 +22,32 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var birthDatePicker: UIDatePicker!
     
     let userType = "General"
+    
+    // URL del Aviso de Privacidad 
     let avisoPage = "https://bdalimentos.org/aviso/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nombreTF.layer.borderWidth = 2
+        nombreTF.layer.borderWidth = 1
         nombreTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         nombreTF.layer.cornerRadius = 8
         nombreTF.layer.masksToBounds = true
         nombreTF.text = ""
         
-        apellidoTF.layer.borderWidth = 2
+        apellidoTF.layer.borderWidth = 1
         apellidoTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         apellidoTF.layer.cornerRadius = 8
         apellidoTF.layer.masksToBounds = true
         apellidoTF.text = ""
         
-        correoTF.layer.borderWidth = 2
+        correoTF.layer.borderWidth = 1
         correoTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         correoTF.layer.cornerRadius = 8
         correoTF.layer.masksToBounds = true
         correoTF.text = ""
         
-        passwordTF.layer.borderWidth = 2
+        passwordTF.layer.borderWidth = 1
         passwordTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         passwordTF.layer.cornerRadius = 8
         passwordTF.layer.masksToBounds = true
@@ -86,7 +89,7 @@ class SignUpViewController: UIViewController {
                     "lastName" : self.apellidoTF.text!,
                     "birthDate" : dateFormatter.string(from: self.birthDatePicker.date),
                     "userType" : self.userType,
-                    "dononations": 0,
+                    "donations": 0,
                     "families": 0,
                     "level": "Plátano",
                     "logros": [
