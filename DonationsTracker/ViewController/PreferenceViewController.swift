@@ -27,7 +27,7 @@ class PreferenceViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tabBarController?.hidesBottomBarWhenPushed = true
+        self.tabBarController?.hidesBottomBarWhenPushed = true
         
         let user = Auth.auth().currentUser
         let userID = user?.uid

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Iniciar Sesión-->
+        <!--Donations Tracker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DonationsTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -119,7 +119,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64E-uM-AIe" secondAttribute="trailing" constant="50" id="x5h-iE-9VQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Iniciar Sesión" id="R6l-ZB-2tc"/>
+                    <navigationItem key="navigationItem" title="Donations Tracker" id="R6l-ZB-2tc"/>
                     <connections>
                         <outlet property="correoTF" destination="1ZG-YR-L5B" id="hZh-Vd-CzE"/>
                         <outlet property="passwordTF" destination="1wX-PX-f9g" id="L1w-1N-4KS"/>
