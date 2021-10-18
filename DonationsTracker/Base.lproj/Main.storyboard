@@ -265,13 +265,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="bjf-94-obt">
-                                <rect key="frame" x="22" y="148" width="370" height="34"/>
-                                <attributedString key="attributedText"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="bjf-94-obt">
+                                <rect key="frame" x="22" y="148" width="370" height="38.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" textContentType="given-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zve-bJ-Wq5">
-                                <rect key="frame" x="22" y="204" width="370" height="23"/>
+                                <rect key="frame" x="22" y="208.5" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Apellidos(s)">
                                         <attributes>
@@ -283,7 +284,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyx-1p-PHp">
-                                <rect key="frame" x="22" y="294" width="370" height="23"/>
+                                <rect key="frame" x="22" y="303" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Correo Electrónico">
                                         <attributes>
@@ -296,7 +297,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH5-em-8bj">
-                                <rect key="frame" x="22" y="384" width="370" height="23"/>
+                                <rect key="frame" x="22" y="397.5" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Contraseña">
                                         <attributes>
@@ -309,7 +310,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXF-xS-Iwf">
-                                <rect key="frame" x="22" y="474" width="370" height="23"/>
+                                <rect key="frame" x="22" y="492" width="370" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Fecha de Nacimiento">
                                         <attributes>
@@ -320,19 +321,22 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-DQ-nSt">
-                                <rect key="frame" x="22" y="238" width="370" height="34"/>
-                                <attributedString key="attributedText"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-DQ-nSt">
+                                <rect key="frame" x="22" y="242.5" width="370" height="38.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" textContentType="family-name"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daW-Z3-m2u">
-                                <rect key="frame" x="22" y="328" width="370" height="34"/>
-                                <attributedString key="attributedText"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daW-Z3-m2u">
+                                <rect key="frame" x="22" y="337" width="370" height="38.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-fx-8C8">
-                                <rect key="frame" x="22" y="418" width="370" height="34"/>
-                                <attributedString key="attributedText"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-fx-8C8">
+                                <rect key="frame" x="22" y="431.5" width="370" height="38.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxO-dg-8oU" customClass="RoundButton" customModule="DonationsTracker" customModuleProvider="target">
@@ -399,7 +403,7 @@
                             <constraint firstItem="jAF-O7-uue" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="hiJ-g3-OHw"/>
                             <constraint firstItem="zve-bJ-Wq5" firstAttribute="top" secondItem="bjf-94-obt" secondAttribute="bottom" constant="22" id="iQS-L9-lEp"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="dg6-TH-e1N" secondAttribute="trailing" constant="22" id="jN5-II-OqU"/>
-                            <constraint firstItem="VxO-dg-8oU" firstAttribute="top" secondItem="wC3-h4-Pif" secondAttribute="bottom" constant="40" id="kJA-Jk-NTe"/>
+                            <constraint firstItem="VxO-dg-8oU" firstAttribute="top" secondItem="wC3-h4-Pif" secondAttribute="bottom" constant="44" id="kJA-Jk-NTe"/>
                             <constraint firstItem="daW-Z3-m2u" firstAttribute="leading" secondItem="Rmm-ex-hmt" secondAttribute="leading" constant="22" id="lt6-cy-nl8"/>
                             <constraint firstItem="bH5-em-8bj" firstAttribute="top" secondItem="daW-Z3-m2u" secondAttribute="bottom" constant="22" id="mdp-uc-hxi"/>
                             <constraint firstItem="Rmm-ex-hmt" firstAttribute="trailing" secondItem="daW-Z3-m2u" secondAttribute="trailing" constant="22" id="pjj-lG-gd8"/>
@@ -686,10 +690,10 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="eatingFamiliesLbl" destination="eeP-HZ-MNH" id="kI7-1D-vIm"/>
+                        <outlet property="eatingFamiliesLbl" destination="0hY-TI-ikm" id="h7w-GC-279"/>
                         <outlet property="levelLlb" destination="PSU-fK-8jW" id="ufP-Vb-hSy"/>
                         <outlet property="logrosCollection" destination="U0D-2j-4IG" id="WCF-xI-aUn"/>
-                        <outlet property="totalDonationLbl" destination="eeP-HZ-MNH" id="rld-OP-68g"/>
+                        <outlet property="totalDonationLbl" destination="eeP-HZ-MNH" id="L6c-c9-8HB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRE-yA-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1178,7 +1182,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="1Rf-Uc-tI2"/>
+        <segue reference="c8T-na-uaU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Donations" width="376" height="360"/>
