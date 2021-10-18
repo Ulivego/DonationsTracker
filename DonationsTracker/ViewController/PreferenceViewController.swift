@@ -10,8 +10,10 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+// ViewController para la pantalla de preference
 class PreferenceViewController: UIViewController {
     
+    // Referencias
     let ref = Database.database().reference()  //Global Variable
 
     @IBOutlet weak var nameNewTF: UITextField!
@@ -20,6 +22,7 @@ class PreferenceViewController: UIViewController {
     @IBOutlet weak var passwordNewTF: UITextField!
     @IBOutlet weak var dateNewTF: UITextField!
     
+    // Funcion al cargar la vista de preference
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,6 +32,8 @@ class PreferenceViewController: UIViewController {
         let user = Auth.auth().currentUser
         let userID = user?.uid
         
+	// Para agregar contorno y color a los TextField
+	    
         nameNewTF.layer.borderWidth = 1
         nameNewTF.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         nameNewTF.layer.cornerRadius = 8
@@ -60,6 +65,7 @@ class PreferenceViewController: UIViewController {
         nameNewTF.layer.cornerRadius = 8
         nameNewTF.layer.masksToBounds = true
         
+	// Para llenar algunos TextField con datos del usuario real
         self.ref.child("UserProfile").child(userID!).getData { (error, snapshot) in
             if let error = error {
                 print("Error getting data \(error)")
@@ -76,16 +82,18 @@ class PreferenceViewController: UIViewController {
             }
         }
         
+	// Para quitar el teclado cuando el usuario presione la pantalla
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
-        
         view.addGestureRecognizer(tap)
     }
 
+    // Funcion al presionar el boton de actualizar
     @IBAction func updateBtn(_ sender: Any) {
         let userID = Auth.auth().currentUser?.uid
 
         var userInfo: User?
         
+	// Actualiza los datos del usuario en firebase
         let key = ref.child("UserProfile").child(userID!).key
         ref.child("UserProfile").child(userID!).observe(.value){ snapshot in
             
@@ -110,6 +118,7 @@ class PreferenceViewController: UIViewController {
             let childUpdates = ["/UserProfile/\(key!)": data]
             self.ref.updateChildValues(childUpdates)
             
+	    // Actualizar correo
             var flag = true
             Auth.auth().currentUser?.updateEmail(to: self.mailNewTF.text!) { error in
                 if error != nil {
@@ -129,6 +138,7 @@ class PreferenceViewController: UIViewController {
                 return
             }
             
+	    // Actualizar contraseña
             if (Int(self.passwordNewTF.text!.count) > 0){
                 Auth.auth().currentUser?.updatePassword(to: self.passwordNewTF.text!) { error in
                     if error != nil {
@@ -149,6 +159,7 @@ class PreferenceViewController: UIViewController {
                 return
             }
             
+	    // Mostrar alerta cuando se guardaron los datos con exito
             let alert = UIAlertController(
                 title: "Actualizado",
                 message: "Se guardo exitosamente",
@@ -162,11 +173,13 @@ class PreferenceViewController: UIViewController {
  
     }
     
+    // Funcion al presionar el boton de Logout
     @IBAction func signoutBtn(_ sender: Any) {
         try! Auth.auth().signOut()
         self.navigationController?.navigationController?.popToRootViewController(animated: true)
     }
     
+    // Funcion para desaparecer teclado
     @objc func keyboardDismiss() {
         view.endEditing(true)
     }
