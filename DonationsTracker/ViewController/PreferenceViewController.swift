@@ -23,6 +23,9 @@ class PreferenceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tabBarController?.hidesBottomBarWhenPushed = true
+        
         let user = Auth.auth().currentUser
         let userID = user?.uid
         
@@ -62,7 +65,6 @@ class PreferenceViewController: UIViewController {
                 print("Error getting data \(error)")
             }
             else if snapshot.exists() {
-                print("Got data \(snapshot.value!)")
                 let value = snapshot.value as? NSDictionary
                 self.nameNewTF.text = value?["name"] as? String ?? ""
                 self.apellidoNewTF.text = value?["lastName"] as? String ?? ""
@@ -82,12 +84,24 @@ class PreferenceViewController: UIViewController {
     @IBAction func updateBtn(_ sender: Any) {
         let userID = Auth.auth().currentUser?.uid
 
-        guard let key = ref.child("UserProfile").child(userID!).key else { return }
-        let data = ["birthDate": dateNewTF.text,
-                    "lastName": apellidoNewTF.text,
-                    "name": nameNewTF.text] as [String : Any]
-        let childUpdates = ["/UserProfile/\(key)": data]
-        ref.updateChildValues(childUpdates)
+        var userInfo: User?
+        
+        let key = ref.child("UserProfile").child(userID!).key
+        ref.child("UserProfile").child(userID!).observe(.value){ snapshot in
+            
+            userInfo = User(snapshot: snapshot)
+            let data = ["birthDate": self.dateNewTF.text,
+                        "lastName": self.apellidoNewTF.text,
+                        "name": self.nameNewTF.text,
+                        "donations": userInfo?.total,
+                        "families": userInfo?.families,
+                        "level": userInfo?.level,
+                        "logros": userInfo?.logros] as [String : Any]
+            
+            let childUpdates = ["/UserProfile/\(key!)": data]
+            self.ref.updateChildValues(childUpdates)
+            
+        }
         
         var flag = true
         Auth.auth().currentUser?.updateEmail(to: mailNewTF.text!) { error in
