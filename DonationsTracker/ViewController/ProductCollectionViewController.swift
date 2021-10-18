@@ -166,22 +166,27 @@ class GoalsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        if userInfo?.userType != "Admin" { return .none }
+        
             return .delete
         }
         
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            tableView.beginUpdates()
-            
-            let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
-            toDelete.removeValue { error, _ in
-                print(error?.localizedDescription as Any)
+        
+        if userInfo?.userType == "Admin" {
+            if editingStyle == .delete {
+                tableView.beginUpdates()
+                
+                let toDelete = self.ref.child("Goals").child(products[indexPath.row].key)
+                toDelete.removeValue { error, _ in
+                    print(error?.localizedDescription as Any)
+                }
+                    
+                products.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                    
+                tableView.endUpdates()
             }
-                
-            products.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-                
-            tableView.endUpdates()
         }
     }
     
