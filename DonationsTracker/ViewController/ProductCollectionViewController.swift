@@ -20,6 +20,7 @@ class GoalsViewController: UITableViewController {
     
     private var refObservers: [DatabaseHandle] = []
     
+    //Takes the values from the database
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +52,7 @@ class GoalsViewController: UITableViewController {
             
             self.userInfo = User(snapshot: snapshot)
             
+            //Si es admin el botón para agregar productos/metas estará disponible
             if self.userInfo?.userType != "Admin" {
                 self.navigationItem.rightBarButtonItems?[1].isEnabled = false
                 self.navigationItem.rightBarButtonItems?[1].tintColor = UIColor.white
@@ -62,6 +64,7 @@ class GoalsViewController: UITableViewController {
         
     }
     
+    //Adds and shpws the navigation bar to the view
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
         
@@ -69,17 +72,19 @@ class GoalsViewController: UITableViewController {
     }
     
     
-    
+    //Removes the observers when the view disappears
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
         refObservers.forEach(ref.removeObserver(withHandle:))
         refObservers = []
     }
     
+    //Returns the number of products/cells/rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
     
+    //Shows on screen the products/goals one per row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "Item Cell", for: indexPath) as! ProductCell
@@ -87,7 +92,8 @@ class GoalsViewController: UITableViewController {
         
         let goal = products[indexPath.row]
         
-        cell.productLabel.text = goal.product //Ver como dar valor
+        //Texto de cada celda
+        cell.productLabel.text = goal.product
         cell.donadosLabel.text = String(goal.progress) + " kg"
         cell.objetivoLabel.text = String(goal.goal) + " kg"
         
@@ -120,11 +126,13 @@ class GoalsViewController: UITableViewController {
         return cell
     }
     
+    //Gives permission to edit the row
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
       }
     
-
+    //When "Agregar Producto" is pressed it creates an alert in which you can give input
+    //the product and the goal. After pressing accept it creates a new cell
     @IBAction func tapAddProduct(_ sender: Any) {
         let alert = UIAlertController(title: "Crear Meta", message: "Anota la información de la nueva meta", preferredStyle: .alert)
         
@@ -140,11 +148,13 @@ class GoalsViewController: UITableViewController {
         var object: [String: Any] = [:]
         alert.addAction(UIAlertAction(title: "Guardar", style: .default, handler: { [weak alert] (_) in
             if
+                //Toma el input de los campos de la alerta
                 let textFieldProduct = alert?.textFields?[0],
                 let productText = textFieldProduct.text,
                 let textFieldGoal = alert?.textFields?[1],
                 let goalText = textFieldGoal.text {
                 
+                //Crea objeto diccionario del producto/meta
                 object = [
                     "product": productText,
                     "progress": 0,
@@ -161,18 +171,20 @@ class GoalsViewController: UITableViewController {
                
         }))
         
-           
         self.present(alert, animated: true, completion: nil)
     }
     
+    //Changes the editing style of the cell to delete so that it may be erased
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         if userInfo?.userType != "Admin" { return .none }
         
             return .delete
         }
-        
+    
+    //Deletes the product cell and data when swiped to the left
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
+        //Tiene que ser tipo de usuario admin para eliminar
         if userInfo?.userType == "Admin" {
             if editingStyle == .delete {
                 tableView.beginUpdates()
@@ -190,6 +202,7 @@ class GoalsViewController: UITableViewController {
         }
     }
     
+    //Used to sort the Progress related to the goal of the products
     func sortProgress(this: Goal, that: Goal) -> Bool {
         let value1 = Float(this.progress) / Float(this.goal)
         let value2 = Float(that.progress) / Float(that.goal)
