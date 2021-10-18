@@ -16,6 +16,7 @@ class GoalsViewController: UITableViewController {
     private let ref = Database.database().reference()
     
     private let user = Auth.auth().currentUser;
+    var userInfo: User?
     
     private var refObservers: [DatabaseHandle] = []
     
@@ -45,14 +46,17 @@ class GoalsViewController: UITableViewController {
         
         refObservers.append(goals)
         
-        var userInfo: User?
+        
         ref.child("UserProfile").child(user!.uid).observe(.value){ snapshot in
             
-            userInfo = User(snapshot: snapshot)
+            self.userInfo = User(snapshot: snapshot)
             
-            if userInfo?.userType != "Admin" {
+            if self.userInfo?.userType != "Admin" {
                 self.navigationItem.rightBarButtonItems?[1].isEnabled = false
                 self.navigationItem.rightBarButtonItems?[1].tintColor = UIColor.white
+            } else {
+                self.navigationItem.rightBarButtonItems?[1].isEnabled = true
+                self.navigationItem.rightBarButtonItems?[1].tintColor = UIColor.systemBlue
             }
         }
         

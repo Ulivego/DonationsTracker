@@ -90,6 +90,14 @@ class PreferenceViewController: UIViewController {
         ref.child("UserProfile").child(userID!).observe(.value){ snapshot in
             
             userInfo = User(snapshot: snapshot)
+            var numLogro = 0
+            let logros = userInfo?.logros?.reduce([String: Bool]()) { (dict, value) -> [String: Bool] in
+                numLogro += 1
+                var dict = dict
+                dict["Logro\(numLogro)"] = value
+                return dict
+            }
+            
             let data = ["birthDate": self.dateNewTF.text,
                         "lastName": self.apellidoNewTF.text,
                         "name": self.nameNewTF.text,
@@ -97,7 +105,7 @@ class PreferenceViewController: UIViewController {
                         "families": userInfo?.families,
                         "userType" : userInfo?.userType,
                         "level": userInfo?.level,
-                        "logros": userInfo?.logros] as [String : Any]
+                        "logros": logros] as [String : Any]
             
             let childUpdates = ["/UserProfile/\(key!)": data]
             self.ref.updateChildValues(childUpdates)
