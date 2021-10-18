@@ -83,7 +83,7 @@ class SignUpViewController: UIViewController {
             
                 let ref = Database.database().reference()
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "YY/MM/dd"
+                dateFormatter.dateFormat = "dd/MM/YY"
                 ref.child("UserProfile").child(authResult!.user.uid).setValue([
                     "name" : self.nombreTF.text!,
                     "lastName" : self.apellidoTF.text!,
