@@ -9,25 +9,23 @@
 import UIKit
 
 class MakeDonationsViewController: UIViewController {
-
+    
+    // URL de la página de Donaciones en Especie
     let donationsPage = "https://bdalimentos.org/dona-en-especie/"
     
+    // Botón de "Donaciones en Especie"
     @IBAction func SpeciesDonBtn(_ sender: Any) {
         if let url = URL(string: donationsPage) {
             UIApplication.shared.open(url)
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
-
 
 }

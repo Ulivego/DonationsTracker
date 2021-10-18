@@ -9,14 +9,20 @@
 import UIKit
 import FirebaseDatabase
 
+
+// Vista de la Celda de las Metas
 class ProductCell: UITableViewCell{
     
+    // Nombre del producto
     @IBOutlet weak var productLabel: UILabel!
     
+    // Progreso actual de la meta
     @IBOutlet weak var donadosLabel: UILabel!
     
+    // Barra de Progreso
     @IBOutlet weak var progressBar: UIProgressView!
     
+    // Objetivo de la meta
     @IBOutlet weak var objetivoLabel: UILabel!
     
 }

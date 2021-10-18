@@ -8,10 +8,13 @@
 
 import UIKit
 
+// Vista para la celda de las insignias
 class LogroViewCell: UICollectionViewCell {
     
-    
+    // Imagen de la insignia
     @IBOutlet weak var LogroImage: UIImageView!
+    
+    // Nombre de la insignia
     @IBOutlet weak var Name: UILabel!
     
 }
