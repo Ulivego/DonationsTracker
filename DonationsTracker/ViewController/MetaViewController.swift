@@ -37,7 +37,7 @@ class MetaViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.userInfo = User(snapshot: snapshot)
             
             self.levelLlb.text = self.userInfo?.level!
-            self.eatingFamiliesLbl.text = String((self.userInfo?.families)!)
+            self.eatingFamiliesLbl.text = String("\((self.userInfo?.families)!) Familias")
             self.totalDonationLbl.text = String("$ \((self.userInfo?.total)!)")
         }
         
