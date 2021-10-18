@@ -93,7 +93,7 @@ class PreferenceViewController: UIViewController {
 
         var userInfo: User?
         
-	// Actualiza los datos del usuario en firebase
+        // Actualiza los datos del usuario en firebase
         let key = ref.child("UserProfile").child(userID!).key
         ref.child("UserProfile").child(userID!).observe(.value){ snapshot in
             
@@ -118,7 +118,7 @@ class PreferenceViewController: UIViewController {
             let childUpdates = ["/UserProfile/\(key!)": data]
             self.ref.updateChildValues(childUpdates)
             
-	    // Actualizar correo
+            // Actualizar correo
             var flag = true
             Auth.auth().currentUser?.updateEmail(to: self.mailNewTF.text!) { error in
                 if error != nil {
@@ -138,7 +138,7 @@ class PreferenceViewController: UIViewController {
                 return
             }
             
-	    // Actualizar contraseña
+            // Actualizar contraseña
             if (Int(self.passwordNewTF.text!.count) > 0){
                 Auth.auth().currentUser?.updatePassword(to: self.passwordNewTF.text!) { error in
                     if error != nil {
@@ -159,7 +159,7 @@ class PreferenceViewController: UIViewController {
                 return
             }
             
-	    // Mostrar alerta cuando se guardaron los datos con exito
+            // Mostrar alerta cuando se guardaron los datos con exito
             let alert = UIAlertController(
                 title: "Actualizado",
                 message: "Se guardo exitosamente",
