@@ -11,6 +11,7 @@ import Firebase
 
 class EconomicDonationsViewController: UIViewController {
 
+    // Textfields para el pago
     @IBOutlet weak var cardNumber: UITextField!
     @IBOutlet weak var ownerName: UITextField!
     @IBOutlet weak var monthCard: UITextField!
@@ -20,7 +21,8 @@ class EconomicDonationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Reconocer el toque para que desaparezca el teclado
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EconomicDonationsViewController.keyboardDismiss))
         
         view.addGestureRecognizer(tap)
@@ -39,12 +41,15 @@ class EconomicDonationsViewController: UIViewController {
         cvNumber.delegate = self
         donationAmount.delegate = self
         
-        self.tabBarController?.hidesBottomBarWhenPushed = true
+        // Ocultar la barra inferior
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     
-
+    // Función para realizar el pago al presionar el botón
     @IBAction func makePayment(_ sender: Any) {
+        
+        // Revisar si se llenó correctamente toda la información
         guard
             let cardNumberText: String = cardNumber.text,
             let ownerNameText: String = ownerName.text,
@@ -59,9 +64,11 @@ class EconomicDonationsViewController: UIViewController {
             return
         }
         
+        // Referencia de la base de datos y del usuario activo
         let database = Database.database().reference()
         let user = Auth.auth().currentUser
         
+        // Información del Pago
         let payment: [String: Any] = [
             "userId": user?.email as Any,
             "cardNumber": cardNumberText,
@@ -70,8 +77,10 @@ class EconomicDonationsViewController: UIViewController {
             "donationAmount": donationAmountText
         ]
         
+        // Guardar el pago
         database.child("Payments").childByAutoId().setValue(payment)
         
+        // Mostrar mensaje cuando se completa
         let alert = UIAlertController(
             title: "¡Gracias!",
             message: "Donación Exitosa",
@@ -97,6 +106,7 @@ class EconomicDonationsViewController: UIViewController {
 
 }
 
+// Función auxiliar para el teclado
 extension EconomicDonationsViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
